@@ -24,6 +24,4 @@ set ruler
 set laststatus=2
 
 " Turn on numbering on left side
-number
-
-
+set number
