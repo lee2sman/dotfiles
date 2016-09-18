@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Install command-line tools using Homebrew
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install software
+brew install git
+brew install imagemagick
+brew install mplayer
+brew install node #also installs node
+brew install ffmpeg --with-libvpx
+brew install fish
+brew install nethack
+brew install pandoc
+brew install w3m
+brew install wget
+
+# Remove outdated versions from cellar
+brew cleanup
