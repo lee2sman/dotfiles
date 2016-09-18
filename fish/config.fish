@@ -1,7 +1,7 @@
-set -g -x PATH /usr/local/bin $PATH
+# Add dotfiles bin programs to my PATH in FISH instead of in bash_profile or bashrc
+set PATH /Users/2sman/dotfiles/bin $PATH
 
-# Path to Z.Fish for directory jumping
-#. /Users/2sman/dotfiles/z.fish 
+# fisherman confi info
 set fisher_home ~/.local/share/fisherman
 set fisher_config ~/.config/fisherman
 source $fisher_home/config.fish

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# This 750words program is based on the idea of writing 750 words a day as a form of mindfulness and meditation.
+# This program prompts the user for input and saves output to your journal. It prompts you to type additional words until you have completed at least 750 words minimum. 
+
+journal_loc=/Users/2sman/Documents/journal.txt #Replace with location of your journal
+
+words_needed=750
+current_typed=0
+entry=""
+
+echo "">>$journal_loc
+echo `date`>>$journal_loc #stick date at beginning of entry
+
+echo "Enter your 750words daily writing practice." 
+
+while [ $words_needed -gt 0 ]
+do
+	read -n 10000 entry
+	current_typed=`echo $entry | wc -w`
+
+	if [ $current_typed -lt $words_needed ]
+	then
+		echo
+		echo "You wrote" $current_typed "words."
+		words_needed=$((words_needed - current_typed))
+		echo "You need to write" $words_needed "words." 
+		echo ""
+	else
+		words_needed=$((words_needed - current_typed))
+		echo "Complete."
+	fi
+	echo "">>$journal_loc
+	echo $entry >>$journal_loc
+done
