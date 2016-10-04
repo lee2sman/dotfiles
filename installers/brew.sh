@@ -19,6 +19,7 @@ brew install nethack
 brew install pandoc
 brew install w3m
 brew install wget
+brew install neovim/neovim/neovim
 
 # Remove outdated versions from cellar
 brew cleanup

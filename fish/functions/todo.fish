@@ -17,5 +17,5 @@ function todo -d "Creates something for me to do"
 # Millions of dollars later and `touch` wins.
 
 # Run our new web 2.0 todo list application and raise millions of VC dollars.
-    touch ~/Desktop/"$argv"
+    touch ~/Desktop/TODO-"$argv"
 end
