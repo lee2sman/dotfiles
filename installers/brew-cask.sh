@@ -12,5 +12,6 @@ brew tap caskroom/version
 
 # Software
 
-brew install vlc
-brew install macdown
+brew cask install vlc
+brew cask install macdown
+brew cask install atom
