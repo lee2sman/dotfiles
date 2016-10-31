@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Install command-line tools using Homebrew
-
 # Make sure we’re using the latest Homebrew
 brew update
+
+# Install command-line tools using Homebrew
+xcode-select --install
 
 # Upgrade any already-installed formulae
 brew upgrade

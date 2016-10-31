@@ -15,3 +15,4 @@ brew tap caskroom/version
 brew cask install vlc
 brew cask install macdown
 brew cask install atom
+brew cask install hyper
