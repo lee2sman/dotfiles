@@ -1,3 +1,3 @@
 function vim --description 'launch neovim instead of vim'
-	nvim
+	nvim $argv
 end
