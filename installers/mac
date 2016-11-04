@@ -19,8 +19,5 @@ fi
 #Install Atom packages
 ./atom.sh
 
-#Set Environment variables
-export EDITOR="/usr/local/bin/nvim"
-
 #COMPLETE
 echo "All installed!"
