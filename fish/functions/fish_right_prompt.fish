@@ -1,0 +1,1 @@
+/Users/2sman/.config/fisherman/joker/fish_right_prompt.fish

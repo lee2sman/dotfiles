@@ -1,0 +1,1 @@
+/Users/2sman/.config/fisherman/segment/segment_right.fish
