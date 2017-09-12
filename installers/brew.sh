@@ -22,6 +22,7 @@ brew install w3m
 brew install wget
 brew install neovim/neovim/neovim
 brew install poppler
+brew install markdown
 
 # Remove outdated versions from cellar
 brew cleanup
