@@ -1,3 +1,3 @@
 function md
-	markdown $argv | lynx -stdin
+	markdown $argv | lynx -stdin -vikeys
 end
