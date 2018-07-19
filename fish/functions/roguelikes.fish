@@ -10,4 +10,5 @@ echo "5) Cataclysm"
 echo "6) Angband"
 echo "7) Omega"
 echo "8) Avanor"
+echo "9) Larn"
 end
