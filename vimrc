@@ -16,6 +16,9 @@ Plug 'junegunn/goyo.vim'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Sonic Pi in Neovim
+Plug 'dermusikman/sonicpi.vim'
 call plug#end()
 
 " Allow backspacing over autoindent, line breaks and start of insert action
