@@ -1,3 +1,3 @@
 function basinski
-	mplayer -loop 0 ~/Music/basinski/Basinski_South_of_Sunset_Bootleg.m4a
+	mpv --no-video "https://www.youtube.com/watch?v=8snzt-umd0g"
 end
