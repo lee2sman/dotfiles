@@ -7,7 +7,7 @@ do
 	mins=25
 	while [ $mins -gt 0 ]; do
 		echo -ne "$mins\033[0K\r"
-		sleep 1
+		sleep 60
 		: $((mins--))
 	done
 	afplay /System/Library/Sounds/Submarine.aiff
@@ -16,7 +16,7 @@ do
 	mins=5
 	while [ $mins -gt 0 ]; do
 		echo -ne "$mins\033[0K\r"
-		sleep 1 
+		sleep 60
 		: $((mins--))
 	done
 done
