@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2018 October
+" Last change:	         2019 August
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -40,6 +40,9 @@ Plug 'dermusikman/sonicpi.vim'
 
 " Vimwiki
 Plug 'vimwiki/vimwiki'
+
+" Markdown Preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 call plug#end()
 
