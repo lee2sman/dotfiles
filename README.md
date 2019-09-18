@@ -21,13 +21,13 @@ This is my dotfiles repo to quickly clone and get started on any (?) new compute
 
 ### Essential programs for me
 
-- ```Neovim``` text editor. I use this every day.
+- ```nvm``` the Neovim text editor. I use this every day.
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time.
 - ```tldr``` command line helper which lists how to use most command line software. 
 - ```gcalcli``` which can display, edit and add to my google calendar.
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc.
 - ```pyradio``` which I use to stream music since I can't work, write, code or relax with it!
-- ```brew``` package managare is pretty essential for finding new Terminal (and even GUI) apps for the Mac command line.
+- ```brew``` package manager is pretty essential for finding new Terminal (and even GUI) apps for the Mac command line.
 
 # My PATH
 In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` My custom programs are in my bin folder, which has been added to my PATH inside config.fish. In general, I find it much easier to script in bash rather than learn fish's scripting syntax.
