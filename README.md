@@ -21,13 +21,14 @@ This is my dotfiles repo to quickly clone and get started on any (?) new compute
 
 ### Essential programs for me
 
-- ```nvm``` the Neovim text editor. I use this every day.
+- ```nvim``` the Neovim text editor. I use this every day.
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time.
 - ```tldr``` command line helper which lists how to use most command line software. 
 - ```gcalcli``` which can display, edit and add to my google calendar.
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc.
 - ```pyradio``` which I use to stream music since I can't work, write, code or relax with it!
 - ```brew``` package manager is pretty essential for finding new Terminal (and even GUI) apps for the Mac command line.
+- ```git``` version control system. I use both GitHub and [Keybase's encrypted Git](https://keybase.io/blog/encrypted-git-for-everyone).
 
 # My PATH
 In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` My custom programs are in my bin folder, which has been added to my PATH inside config.fish. In general, I find it much easier to script in bash rather than learn fish's scripting syntax.
@@ -48,6 +49,7 @@ Examples:
 - ```dublab``` - plays LA web radio [Dublab](https://www.dublab.com/) with mplayer. ```q``` to quit.
 - ```dunnet``` - launches the emacs easter egg science fiction text adventure game [Dunnet](https://en.wikipedia.org/wiki/Dunnet_(video_game))
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
+- ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
 - ```forecast``` - wrapper around wattr.in to get local forecast with ascii art display
 - ```get_resolution``` - find current screen/projector resolution
 - ```htmlpreview [filename]``` - follow with html filename. wrapper using lynx to display html file in terminal.
