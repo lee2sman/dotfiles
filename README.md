@@ -21,6 +21,8 @@ This is my dotfiles repo to quickly clone and get started on any (?) new compute
 
 ### Essential programs for me
 
+Keep in mind I'm an artist, not a developer. I write text most days, work oncreative coding and interactive and web-based art, build sites, create tools, read, make music, etc.
+
 - ```nvim``` the Neovim text editor. I use this every day.
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time.
 - ```tldr``` command line helper which lists how to use most command line software. 
