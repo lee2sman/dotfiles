@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2019 August
+" Last change:	         2019 November 
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -24,6 +24,9 @@ set laststatus=2
 
 " Turn on numbering on left side
 set number
+
+" Tabs are equivalent to two spaces
+set shiftwidth=2
 
 call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
