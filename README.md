@@ -5,7 +5,7 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye Mac](https://opensource.com/article/20/3/mac-linux). My Mac dotfiles can be found in the main branch. Linux dotfiles (more minimal) in the Linux branch.
 
-I use [fishshell](https://fishshell.com/) instead of Bash.
+I use [fishshell](https://fishshell.com/) instead of Bash. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout).
 
 ![Screenshot](screenshot.png)  
 *Screenshot of my Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
@@ -64,6 +64,8 @@ Current-ish list:
 I've switched to Neovim from Vim for text editing/coding/etc which I use like an IDE. Instead of a .vimrc I have an init.vim file. It needs to be placed in ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
 
 I never learned tmux terminal multiplexer or properly managing buffers in Vim/Neovim. Instead I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file. You can take a look.
+
+I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for years; no complaints.
 
 Plug-ins
 - [Goyo](https://github.com/junegunn/goyo.vim) - minimalist writing app
