@@ -50,10 +50,9 @@ Examples:
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure.
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ```lynx [url]``` - follow with url (e.g. nytimes.com) to launch page in lynx with good defaults
-- ```news``` - displays NPR's Text-based news site and top headlines of the day with links to full articles. uses Lynx.
+- ```gcalcli``` - simplifies the gcalcli command so I don't have to specify my default calendar and *quick-add*, which I always use
+- ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
-- ```roguelikes``` - I play so many [roguelikes](https://www.reddit.com/r/roguelikes/) games I can't keep trick. This is a theoretically up-to-date list of what I've got / how to launch them.
 - ```vim``` - remap so instead launches Neovim.
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
