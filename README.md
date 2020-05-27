@@ -7,6 +7,9 @@ As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye
 
 I use [fishshell](https://fishshell.com/) instead of Bash.
 
+![Screenshot](screenshot.png)  
+*Screenshot of my Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
+
 ### Why Fish Shell?
 
 - Autocomplete is on by default and works really well, using the manual pages and your previous commands to make suggestions. Press right to accept any suggestion or else keep typing.
