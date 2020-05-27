@@ -60,3 +60,8 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}
 
 " settings added to get markdown-preview to work
 let g:mkdp_browser = 'firefox'
+
+" allow saving with W (pesky shift key!)
+command! W :w
+command! Wq :wq
+command! WQ :wq
