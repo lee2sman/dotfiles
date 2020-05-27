@@ -14,7 +14,7 @@ I use [fishshell](https://fishshell.com/) instead of Bash.
 
 - Autocomplete is on by default and works really well, using the manual pages and your previous commands to make suggestions. Press right to accept any suggestion or else keep typing.
 - It looks great. Type ```fish_config``` to launch your web browser to select how your Terminal will look (fonts, colors, prompts, functions, etc). *Update: I'm using the Terminology terminal which overrides some of this and has an easy theme selector as well*.
-- I'm using the fisher plugin manager. Probably unnecessary. You can easily install complex beautiful prompts and the reason I installed it was to be able to add the incredible [z](https://github.com/jethrokuan/z) jump command, etc. 
+- I'm using the fisher plugin manager. You can easily install complex beautiful prompts and the reason I installed it was to be able to add the incredible [z](https://github.com/jethrokuan/z) jump command, etc. 
 - syntax highlighting is amazing. This makes it easy to understand what I'm typing/calling.
 - I use vimkeys in Fish so I can use vim commands when composing commands at my prompt. zsh has this too, but Fish shows what mode you are in and autocomplete works well with it.
 
@@ -32,23 +32,24 @@ Keep in mind I'm an artist, not a developer. I write text most days, work on cre
 
 - ```nvim``` the Neovim text editor. I use this every day.
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time. [info](https://github.com/jethrokuan/z)
-- ```tldr``` command line helper which lists how to use most command line software. 
-- ```gcalcli``` which can display, edit and add to my google calendar.
-- ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc.
-- ```pyradio``` which I use to stream music since I can't work, write, code or relax with it!
-- ~~```brew``` package manager is pretty essential for finding new Terminal (and even GUI) apps for the Mac command line.~~
-- ```apt``` package manager for Ubuntu.
+- ```tldr``` command line helper which lists how to use most command line software. [info](https://tldr.sh/)
+- ```gcalcli``` which can display, edit and add to my google calendar. [info](https://github.com/insanum/gcalcli)
+- ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
+- ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
+- ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
 - ```git``` version control system. I use both GitHub and [Keybase's encrypted Git](https://keybase.io/blog/encrypted-git-for-everyone).
 
 # My PATH
-In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` My custom programs are in my bin folder, which has been added to my PATH inside config.fish. In general, I find it much easier to script in bash rather than learn fish's scripting syntax.
+The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
+
+In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
 
 # Aliases / Fish Functions
-I have many fish functions, which is what fish calls its aliases. Check them out inside /fish/functions. Lots of basic scripts for playing music, markdown, opening various programs and a local server, some strange artware novelties, etc.
+In Bash we have aliases, but Fishshell calls them functions. Check them out inside /fish/functions. These are used to simplify or improve specifdic commandline calls.
 
-*Update: I used to have a ton of functions for launching radio stations, rendering text, etc. Have simplified and eliminated most of these. Check my main branch under fish/functions to see those*.
+*Update: I used to have a ton of functions for launching radio stations, rendering text, etc. Have simplified and eliminated most of these on my Ubuntu machine (for example by using the pyradio program now) but they are still on my Mac found in the main branch under fish/functions*.
 
-Examples:
+Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure.
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
@@ -60,22 +61,20 @@ Examples:
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Neovim
-I've switched to Neovim from Vim for text editing/coding/etc which I use like an IDE. Instead of a vimrc I have an init.vim file. It needs to be placed in ~/.config/nvim . I am using the Plug manager, which gets called in my init.vim file.
+I've switched to Neovim from Vim for text editing/coding/etc which I use like an IDE. Instead of a .vimrc I have an init.vim file. It needs to be placed in ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
 
-**I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.** 
-
-I never learned tmux or properly managing buffers in Vim/Neovim. Instead I open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config. You can take a look.
+I never learned tmux terminal multiplexer or properly managing buffers in Vim/Neovim. Instead I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file. You can take a look.
 
 Plug-ins
 - [Goyo](https://github.com/junegunn/goyo.vim) - minimalist writing app
 - [Vimwiki](https://vimwiki.github.io/) - a vim-based personal wiki / knowledge repository. I use this extensively but it's for internal use only on my own machine.
 - [vim-sensible](https://www.vim.org/scripts/script.php?script_id=4391) - provides sensible basic defaults in vim.
 - [Nerd-Tree](https://github.com/scrooloose/nerdtree) - make vim work more like an IDE with left-side file view.
-- [Sonic Pi](https://github.com/dermusikman/sonicpi.vim) - used to run Sonic Pi from Vim instead of its own application
+- [Sonic Pi](https://github.com/dermusikman/sonicpi.vim) - used to run Sonic Pi (livecoding music software) from Vim instead of its own application. Still requires the original Sonic Pi software to be open/running. This acts as alternate frontend.
 - [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim) - Replaces Mou, Macdown, and Markdown preview that I was previously using in Atom. Runs very fast. Starts a local server and opens your browser to preview Markdown as you're writing it live. Scrolls the webpage for you too as you move up and down in your document! Since I'm writing in Markdown all the time this plugin is a must!
 
 ## Atom for IDE and custom Markdown editor
-vim-mode and ex-mode plugins for me. liveserver and probably some other things I've forgotten. I mostly just use Neovim instead though.
+vim-mode and ex-mode plugins for me, liveserver, Zen focuswriter, teletype for collaborative editing. I mostly use Neovim instead unless I'm teaching students.
 
 ## TLDR
 
@@ -92,5 +91,5 @@ I contributed the file for how to use ```gcalcli```, the command-line client for
 Terminology terminal lets you view image files in the browser.
 
 - ```tyls``` - List/display all files in the current directory and show thumbnail image
-- ```tycat filename``` - Display filename in the Terminal. You can even do ```tycat *.jpg``` for example. 
+- ```tycat filename``` - Display filename in the Terminal. You can even do ```tycat *.jpg``` for example to see all of the images in your current directory displayed large in the Terminal. 
 
