@@ -43,44 +43,18 @@ In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` M
 # Aliases / Fish Functions
 I have many fish functions, which is what fish calls its aliases. Check them out inside /fish/functions. Lots of basic scripts for playing music, markdown, opening various programs and a local server, some strange artware novelties, etc.
 
-*Update: some of these I no longer have on my Ubuntu machine. Anything crossed out I no longer use so check the main branch of this repo for those if you're curious.*
+*Update: I used to have a ton of functions for launching radio stations, rendering text, etc. Have simplified and eliminated most of these. Check my main branch under fish/functions to see those*.
 
 Examples:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
-- ~~```ambient``` - immediately plays Soma FM's [Deep Space One](https://somafm.com/deepspaceone/) channel using mplayer. ```q``` to quit.~~ *I now just access it in Pyradio*
-- ~~```basic``` - drops into the [Chipmunk BASIC](http://www.nicholson.com/rhn/basic/) interpreter~~
-- ~~```basinski``` - plays a looping William Basinski audio loop~~
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure.
-- ~~```buddha``` - plays random [FM3 Buddha machine](https://en.wikipedia.org/wiki/FM3) sounds.~~
-- ~~```chillwave``` - plays Soma FM's [Fluid](https://somafm.com/fluid/) (*instrumental hip hop*) station using mplayer. ```q``` to quit.~~ *I now just access it in Pyradio*
-- ~~```done``` - works with ```todo``` listed below. Essentially, moves the file to a DONE folder.~~ *Update: I use my personal vimwiki wiki to track my tasks now*
-- ~~```drone``` - plays Soma FM's [Drone Zone](https://somafm.com/dronezone/) channel with mplayer. ```q``` to quit.~~ *I now just access it in Pyradio*
-- ~~```dublab``` - plays LA web radio [Dublab](https://www.dublab.com/) with mplayer. ```q``` to quit.~~ *I now just access it in Pyradio*
-- ~~```dunnet``` - launches the emacs easter egg science fiction text adventure game [Dunnet](https://en.wikipedia.org/wiki/Dunnet_(video_game))~~
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ~~```forecast``` - wrapper around wattr.in to get local forecast with ascii art display~~
-- ~~```get_resolution``` - find current screen/projector resolution~~
-- ```htmlpreview [filename]``` - follow with html filename. wrapper using lynx to display html file in terminal.
-- ```hypnagogia``` - plays a particular episode of [Music For Programming](https://musicforprogramming.net/)
-- ~~```journal``` - launches terminal input to append to a journal file. Complains if I don't write enough.~~ *Update: Now I just use vimwiki*
 - ```lynx [url]``` - follow with url (e.g. nytimes.com) to launch page in lynx with good defaults
-- ~~```macdown``` - just launches macdown because I was using it so often until I got MarkdownPreview in Neovim (see below)~~ *Update: I'm no longer using a Mac and prefer the app [Ghostwriter](https://wereturtle.github.io/ghostwriter/) instead*
-- ~~```md [filename.md]``` - launches a markdown preview that looks pretty damn good in the Terminal. uses Pandoc and Lynx.~~ *Update: replaced this with mdless, see below*
 - ```news``` - displays NPR's Text-based news site and top headlines of the day with links to full articles. uses Lynx.
-- ~~```ntsradio``` - launches NTS Radio studio 1 player using mplayer. ```q``` to quit.~~ *Update: now I access this in Pyradio*
-- ~~```pixelmator``` - just launches the Pixelmator GUI app. I use this instead of Photoshop or GIMP on my Mac.~~ *Update: I now use the free and open source app Krita, which I adore*
-- ~~```plantsfm``` - uses mplayer to launch Data Garden's [Plants FM](http://www.plants.fm/) (I suggested this name to them :), live sounds from garden plants.~~
-- ~~```pyradio``` - [pyradio](http://www.coderholic.com/pyradio/) is a great commandline radio station player but hard to track your station file when you update so this adds a link to my permanent station file.~~ *Update: not a problem for me anymore?*
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
 - ```roguelikes``` - I play so many [roguelikes](https://www.reddit.com/r/roguelikes/) games I can't keep trick. This is a theoretically up-to-date list of what I've got / how to launch them.
-- ~~```server``` - just a wrapper around Python's simpleHTTPServer so I can launch a live server in the current directory. Mostly I just use npm's [http-server](https://www.npmjs.com/package/http-server)~~ *Update: I use npm's http-server*
-- ~~```silence``` - an implementation/performance of John Cage's [4'33"](https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3) in the Terminal~~
-- ~~```todo taskname``` - creates a new file with the name of the task onto my desktop. Concept from Zach Holman's [dotfiles](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)~~ *I now track my tasks in my vimwiki personal wiki*
-- ~~```todolist``` - lists any files on desktop in the TODO folder.~~ *see above.*
-- ~~```vi``` - just launches neovim aka ```nvim```.~~ *Update: Vi launches vanilla Vim just in case I need it instead of Neovim!*
 - ```vim``` - remap so instead launches Neovim.
-- ~~```whitenoise``` - plays white noise with [sox](http://sox.sourceforge.net/).~~ *Update: I have a Lectrofan hardware which I use instead*
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Neovim
