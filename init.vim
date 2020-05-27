@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2019 November 
+" Last change:	         2020 May
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -28,6 +28,12 @@ set number
 " Tabs are equivalent to two spaces
 set shiftwidth=2
 
+" This setting means that yanking in vim will place the text in the system
+" clipboard and you can paste p in another tab/instance of nvim
+" Works on my Ubuntu Linux but I haven't tested on a Mac/Win
+" Did not work in vanilla Vim for me
+set clipboard+=unnamedplus
+
 call plug#begin('~/.config/nvim/plugged')
 " Plugins will go here in the middle.
 Plug 'tpope/vim-sensible'
@@ -45,7 +51,7 @@ Plug 'dermusikman/sonicpi.vim'
 Plug 'vimwiki/vimwiki'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 call plug#end()
 
