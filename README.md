@@ -69,13 +69,10 @@ Plug-ins
 - [vim-sensible](https://www.vim.org/scripts/script.php?script_id=4391) - provides sensible basic defaults in vim.
 - [Nerd-Tree](https://github.com/scrooloose/nerdtree) - make vim work more like an IDE with left-side file view.
 - [Sonic Pi](https://github.com/dermusikman/sonicpi.vim) - used to run Sonic Pi from Vim instead of its own application
-- ~~[Markdown Preview](https://github.com/iamcco/markdown-preview.nvim) - Replaces Mou, Macdown, and Markdown preview in Atom. Runs a server and opens your browser to preview Markdown as you're writing it live. Scrolls the webpage for you too.~~ *Update: Did not work on my Ubuntu machine.*
-
-## Previewing Markdown in the Commandline
-~~Check out my [md](fish/functions/md.fish) function that uses Pandoc and Lynx to render markdown preview in the commandline. It allows vim-keys navigation.~~ *Update: I replaced this with [mdless](https://brettterpstra.com/projects/mdless/) utility on my Linux branch of this dotfiles repo.*
+- [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim) - Replaces Mou, Macdown, and Markdown preview that I was previously using in Atom. Runs very fast. Starts a local server and opens your browser to preview Markdown as you're writing it live. Scrolls the webpage for you too as you move up and down in your document! Since I'm writing in Markdown all the time this plugin is a must!
 
 ## Atom for IDE and custom Markdown editor
-In Atom I'm using the builtin markdown plugin as well as the vim-mode and ex-mode plugins.  
+vim-mode and ex-mode plugins for me. liveserver and probably some other things I've forgotten. I mostly just use Neovim instead though.
 
 ## TLDR
 
