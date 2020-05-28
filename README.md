@@ -53,6 +53,7 @@ In Bash we have aliases, but Fishshell calls them functions. Check them out insi
 
 Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
+- ```brogue``` - for the life of me can't build this roguelike game on Ubuntu, and others online struggle, so I am using the minimalist [surf](https://surf.suckless.org/) browser, launching brogue as a website online and reminding myself how to escape/quit
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure.
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
