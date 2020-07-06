@@ -78,6 +78,8 @@ Plug-ins
 - [Sonic Pi](https://github.com/dermusikman/sonicpi.vim) - used to run Sonic Pi (livecoding music software) from Vim instead of its own application. Still requires the original Sonic Pi software to be open/running. This acts as alternate frontend.
 - [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim) - Replaces Mou, Macdown, and Markdown preview that I was previously using in Atom. Runs very fast. Starts a local server and opens your browser to preview Markdown as you're writing it live. Scrolls the webpage for you too as you move up and down in your document! Since I'm writing in Markdown all the time this plugin is a must! ```:MarkdownPreview``` to begin.
 
+When I want to add a new plugin I simply add a single line to my init.vim file, then run ```:PlugInstall``` and it downloads into the proper folder.
+
 ## Atom for IDE and custom Markdown editor
 vim-mode and ex-mode plugins for me, liveserver, Zen focuswriter, teletype for collaborative editing. I mostly use Neovim instead unless I'm teaching students.
 
