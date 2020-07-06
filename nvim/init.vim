@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2020 May
+" Last change:	         2020 July
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -53,6 +53,9 @@ Plug 'vimwiki/vimwiki'
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
+" Prettier 
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+
 call plug#end()
 
 " vimwiki settings
@@ -65,3 +68,6 @@ let g:mkdp_browser = 'firefox'
 command! W :w
 command! Wq :wq
 command! WQ :wq
+
+" alternate keybinding (Control-N) to toggle nerdtree
+map <C-n> :NERDTreeToggle<CR>
