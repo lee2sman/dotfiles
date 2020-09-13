@@ -53,6 +53,7 @@ In Bash we have aliases, but Fishshell calls them functions. Check them out insi
 
 Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
+- ```av98``` - launches the experimental simple commandline AV-98 Gemini Protocol browser
 - ```brogue``` - had to modify some makefile and config to get this roguelike game to work in ubuntu. This shortcut launches the modified game.
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure, ```backgammon```, ```hack``` roguelike game, ```robots``` Dalek game, ```cribbage``` card game, ```monop``` commandline monopoly, ```tetris-bsd```
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
