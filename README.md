@@ -37,6 +37,7 @@ Keep in mind I'm an artist, not a developer. I write text most days, work on cre
 - ```tldr``` command line helper which lists how to use most command line software. [info](https://tldr.sh/)
 - ```gcalcli``` which can display, edit and add to my google calendar. [info](https://github.com/insanum/gcalcli)
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
+- ```dreams``` quick shortcut to open my dreams journal textfile
 - ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
 - ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
 - ```git``` version control system. I use both GitHub and [Keybase's encrypted Git](https://keybase.io/blog/encrypted-git-for-everyone).
