@@ -7,7 +7,7 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye Mac](https://opensource.com/article/20/3/mac-linux). My Mac dotfiles can be found in the main branch. Linux dotfiles (more minimal) in the Linux branch. I also have a Windows Subsystem for Linux branch for use on my Windows machine.
 
-**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the Terminology terminal.
+**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the ~~Terminology~~ terminal (update: I primarily use Tilda terminal now. It's fast, and I had a bug with terminology).
 
 ![Screenshot](screenshot.png)  
 *Screenshot of my Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
