@@ -69,5 +69,8 @@ command! W :w
 command! Wq :wq
 command! WQ :wq
 
+" my vwscratchpad launcher
+:command Scratchpad silent !open ~/Software/vwscratchpad/index.html
+
 " alternate keybinding (Control-N) to toggle nerdtree
 map <C-n> :NERDTreeToggle<CR>
