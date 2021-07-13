@@ -24,7 +24,7 @@ As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye
 
 - Fish usually needs to be installed. It's not a built-in shell on Mac, Windows but it does come on some Linux distros. In any case, it's super easy to [install](https://fishshell.com/).
 - Ocassionally you actually just want to use some simple Bash commands, particularly with wildcards like ```*``` or ```.``` and Bash has trouble knowing what to do. It'll yell at you. So then i just type ```bash``` to get into a temp bash shell, and then ```exit``` when I'm done.
-- ~~I still write Bash scripts instead of fish shell scripts. I add the bash shebang to the top so runs fine.~~ Update: I enjoy writish fish scripts now! Simpler, less obscure Bash-y syntax!
+- ~~I still write Bash scripts instead of fish shell scripts. I add the bash shebang to the top so runs fine.~~ Update: I enjoy writing fish scripts now! Simpler, less obscure Bash-y syntax!
 - Even though it's easy to install and makes the command line simple, I prefer to teach Bash to students first since they should know it when they jump on a new machine without Fish.
 
 ### Essential programs for me
