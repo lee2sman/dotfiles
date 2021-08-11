@@ -5,14 +5,12 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 [Dotfiles](https://github.com/webpro/awesome-dotfiles) are a programmer's term for the hidden files that start with a ```.``` stored in the root directory of your computer. They contain custom settings for your operating system and software, especially commandline software. This includes adding special commands, remapping keyboard keys, specifying window sizes, changing sounds, and just generally customizing your computer's defaults. In this repo I have only included dotfiles of things I've customized.
 
-As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye Mac](https://opensource.com/article/20/3/mac-linux). My Mac dotfiles can be found in the main branch. Linux dotfiles (more minimal) in the Linux branch. I also have a Windows Subsystem for Linux branch for use on my Windows machine.
-
-**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the ~~Terminology~~ terminal (update: I primarily use Tilda terminal now. It's fast, and I had a bug with terminology).
+**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I primarily use Tilda terminal. I use the i3 window manager without a desktop environment.
 
 ![Screenshot](screenshot.png)  
-*Screenshot of my Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
+*Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
 
-### Why Fish Shell?
+### Fish Shell?
 
 - Autocomplete is on by default and works really well, using the manual pages and your previous commands to make suggestions. Press right to accept any suggestion or else keep typing.
 - It looks great. Type ```fish_config``` to launch your web browser to select how your Terminal will look (fonts, colors, prompts, functions, etc). *Update: I'm using the Terminology terminal which overrides some of this and has an easy theme selector as well*.
@@ -20,26 +18,19 @@ As of December 2019 I have switched to Linux (Ubuntu) as my regular OS. [Goodbye
 - syntax highlighting is amazing. This makes it easy to understand what I'm typing/calling.
 - I use vimkeys in Fish so I can use vim commands when composing commands at my prompt. zsh has this too, but Fish shows what mode you are in and autocomplete works well with it.
 
-#### What doesn't work great in Fish shell?
-
-- Fish usually needs to be installed. It's not a built-in shell on Mac, Windows but it does come on some Linux distros. In any case, it's super easy to [install](https://fishshell.com/).
-- Ocassionally you actually just want to use some simple Bash commands, particularly with wildcards like ```*``` or ```.``` and Bash has trouble knowing what to do. It'll yell at you. So then i just type ```bash``` to get into a temp bash shell, and then ```exit``` when I'm done.
-- ~~I still write Bash scripts instead of fish shell scripts. I add the bash shebang to the top so runs fine.~~ Update: I enjoy writing fish scripts now! Simpler, less obscure Bash-y syntax!
-- Even though it's easy to install and makes the command line simple, I prefer to teach Bash to students first since they should know it when they jump on a new machine without Fish.
-
-### Essential programs for me
+### Essential programs
 
 Keep in mind I'm an artist, not a developer. I write text most days, work on creative coding and interactive and web-based art, build sites, create tools, read, make music, etc.
 
 - ```nvim``` the Neovim text editor. 
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time. [info](https://github.com/jethrokuan/z)
 - ```tldr``` command line helper which lists how to use most command line software. [info](https://tldr.sh/)
-- ```gcalcli``` which can display, edit and add to my google calendar. [info](https://github.com/insanum/gcalcli)
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
-- ```dreams``` quick shortcut to open my dreams journal textfile
 - ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
 - ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
 - ```git``` version control system. I use both GitHub and [Keybase's encrypted Git](https://keybase.io/blog/encrypted-git-for-everyone).
+- ```nnn``` - simple attractive file browser
+- ```amfora``` - intuitive gemini client
 
 # My PATH
 The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
@@ -47,9 +38,7 @@ The PATH tells your computer where your custom software is located, so that you 
 In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
 
 # Aliases / Fish Functions
-In Bash we have aliases, but Fishshell calls them functions. Check them out inside /fish/functions. These are used to simplify or improve specific commandline calls.
-
-*Update: I used to have a ton of functions for launching radio stations, rendering text, etc. Have simplified and eliminated most of these on my Ubuntu machine (for example by using the pyradio program now) but they are still on my Mac found in the main branch under fish/functions*.
+Rather than bash aliases, fish shell uses functions.
 
 Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
@@ -71,11 +60,11 @@ Current-ish list:
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Neovim
-I've switched to Neovim from Vim for text editing/coding/etc which I use like an IDE. Instead of a .vimrc I have an init.vim file. It needs to be placed in ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. My init.vim is fully commented, so you can look at the details there.
+Instead of vim's vimrc I have an init.vim file at ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. My init.vim is fully commented, so you can look at the details there.
 
-I never learned tmux terminal multiplexer or properly managing buffers in Vim/Neovim. Instead I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file that lets me paste text from anywhere on my computer inside Neovim now. You can take a look at my init.vim file for this.
+Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file that lets me paste text from anywhere on my computer inside Neovim now. You can take a look at my init.vim file for this.
 
-I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for years; no complaints.
+I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 5 years; no complaints.
 
 Plug-ins
 - [Goyo](https://github.com/junegunn/goyo.vim) - minimalist writing app. ```:Goyo``` to toggle it on/off.
@@ -103,10 +92,6 @@ Lists the most common uses for a command.
 
 I contributed the file for how to use ```gcalcli```, the command-line client for google calendar. Run ```tldr gcalcli``` to see my handiwork.
 
-## Images in the Terminology Terminal
+# i3
 
-Terminology terminal lets you view image files in the browser.
-
-- ```tyls``` - List/display all files in the current directory and show thumbnail image
-- ```tycat filename``` - Display filename in the Terminal. You can even do ```tycat *.jpg``` for example to see all of the images in your current directory displayed large in the Terminal. 
-
+  i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
