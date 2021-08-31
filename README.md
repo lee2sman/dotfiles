@@ -5,7 +5,7 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 [Dotfiles](https://github.com/webpro/awesome-dotfiles) are a programmer's term for the hidden files that start with a ```.``` stored in the root directory of your computer. They contain custom settings for your operating system and software, especially commandline software. This includes adding special commands, remapping keyboard keys, specifying window sizes, changing sounds, and just generally customizing your computer's defaults. In this repo I have only included dotfiles of things I've customized.
 
-**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I primarily use Tilda terminal. I use the i3 window manager without a desktop environment.
+**General notes:** I use [Fishshell](https://fishshell.com/) instead of Bash or Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email.
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
@@ -95,4 +95,8 @@ I contributed the file for how to use ```gcalcli```, the command-line client for
 
 # i3
 
-  i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
+i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
+  
+# Alpine
+
+I use CLI program Alpine to check my personal email, hosted with Migadu. I use a minimal config.
