@@ -54,6 +54,7 @@ Current-ish list:
 - ```make-website n``` - copies over a starter html, css, js to the specified named directory, creating it if needed
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
+- ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
 - ```vim``` - remap so instead launches Neovim. (If I ever actually wanted to just run vim I could type ```vi``` which is automatically redirected on ubuntu, but that never happens)!
 - ```vimwiki``` - launches my vimwiki in Neovim
