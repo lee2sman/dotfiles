@@ -42,6 +42,7 @@ Rather than bash aliases, fish shell uses functions.
 
 Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
+- ```alpine``` - opens alpine email client directly to inbox rather than menu
 - ```av98``` - launches the experimental simple commandline AV-98 Gemini Protocol browser
 - ```bandcamp``` - specify url of bandcamp album to play on the commandline via player. no error handling at this point. PgUp/PgDown to navigate tracks.
 - ```bat``` - current battery state and percentage
