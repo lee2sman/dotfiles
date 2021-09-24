@@ -56,6 +56,7 @@ Current-ish list:
 - ```vim``` - remap so instead launches Neovim. (If I ever actually wanted to just run vim I could type ```vi``` which is automatically redirected on ubuntu, but that never happens)!
 - ```vimwiki``` - launches my vimwiki in Neovim
 - ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
+- ```wificonnections``` - Lists all wifi networks stored on computer and prompts you to enter name of one you'd like to get password and SSID information for.
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Neovim
