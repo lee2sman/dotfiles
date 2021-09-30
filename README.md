@@ -50,6 +50,7 @@ Current-ish list:
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
 - ```food n``` - adds date and time and specified food n to a simple csv file at ~/.food (for tracking meals)
 - ```make-website n``` - copies over a starter html, css, js to the specified named directory, creating it if needed
+- ```marginalia <search string>``` - does a search for specified string via [Marginalia](https://memex.marginalia.nu/projects/edge/about.gmi), a search engine that favors text-heavy, oldskool-style websites 
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
