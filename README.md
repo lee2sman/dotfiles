@@ -42,7 +42,7 @@ Current-ish list:
 - ```ansiweather``` - simplifies the command to grab the weather and display a 5 day local weather forecast one-liner
 - ```av98``` - launches the experimental simple commandline AV-98 Gemini Protocol browser
 - ```bandcamp``` - specify url of bandcamp album to play on the commandline via player. no error handling at this point. PgUp/PgDown to navigate tracks.
-- ```bat``` - current battery state and percentage
+- ```battery``` - current battery state and percentage
 - ```brogue``` - had to modify some makefile and config to get this roguelike game to work in ubuntu. This shortcut launches the modified game.
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure, ```backgammon```, ```hack``` roguelike game, ```robots``` Dalek game, ```cribbage``` card game, ```monop``` commandline monopoly, ```tetris-bsd```
 - ```calm``` - plays some brown noise with sox, sounds like calm ocean waves
