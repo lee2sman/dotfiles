@@ -180,3 +180,6 @@ bindsym $mod+Print exec gnome-screenshot -a
 # sudo chmod u+s /usr/bin/brightnessctl
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+# Desktop background image
+exec --no-startup-id feh --bg-scale ~/Desktop/gimli.jpg
