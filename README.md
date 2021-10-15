@@ -11,10 +11,10 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 ### Fish Shell advantages
 
 - Autocomplete is on by default and works really well, using the manual pages and your previous commands to make suggestions. Press right to accept any suggestion or else keep typing.
-- It looks great. Type ```fish_config``` to launch your web browser to select how your Terminal will look (fonts, colors, prompts, functions, etc). *Update: I'm using the Terminology terminal which overrides some of this and has an easy theme selector as well*.
-- I'm using the fisher plugin manager. You can easily install complex beautiful prompts and the reason I installed it was to be able to add the incredible [z](https://github.com/jethrokuan/z) jump command, etc. 
-- syntax highlighting is amazing. This makes it easy to understand what I'm typing/calling.
-- I use vimkeys in Fish so I can use vim commands when composing commands at my prompt. zsh has this too, but Fish shows what mode you are in and autocomplete works well with it.
+- It looks great. Type ```fish_config``` to launch your web browser to select how your Terminal will look (fonts, colors, prompts, functions, etc). 
+- I'm using the fisher plugin manager, primarily to install [z](https://github.com/jethrokuan/z) jump command. Also useful installing various powerline bars, prompts.
+- Built-in syntax highlighting of commands.
+- vimkeys in Fish option. Fish shows what mode you are in and works well with autocomplete.
 
 ### Essential programs
 
@@ -24,17 +24,17 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
 - ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
 - ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
-- ```git``` version control system. I use both GitHub and [Keybase's encrypted Git](https://keybase.io/blog/encrypted-git-for-everyone).
+- ```git``` version control system. I use GitHub, Tildegit and [Keybase Git](https://keybase.io/blog/encrypted-git-for-everyone).
 - ```nnn``` - simple attractive file browser
 - ```amfora``` - intuitive gemini client
 
 # My PATH
 The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
 
-In fish, you add to your PATH in `config.fish`, not bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
+In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/config.fish```, not in your bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
 
 # Aliases / Fish Functions
-Rather than bash aliases, fish shell uses functions.
+Rather than bash aliases, fish shell uses functions, stored in ```~/.config/fish/functions/```
 
 Current-ish list:
 - ```agenda``` - prints my weekly google calendar schedule, using gcalcli
