@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2020 July
+" Last change:	         2020 November
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -41,7 +41,7 @@ Plug 'tpope/vim-sensible'
 " distraction-free writing in vim
 Plug 'junegunn/goyo.vim'
 
-" On-demand loading
+" NERDTreeToggle (for directory navigation)
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Sonic Pi in Neovim
@@ -74,3 +74,6 @@ command! WQ :wq
 
 " alternate keybinding (Control-N) to toggle nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
