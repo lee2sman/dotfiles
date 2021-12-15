@@ -49,6 +49,7 @@ Current-ish list:
 - ```copy <filename>``` - Copies contents of file to the computer's clipboard
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
 - ```ddg! <search string>``` - performs search, returning top hit on duckduckgo to std output, piped through less
+- ```dvorak``` - switches keyboard map to dvorak
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
 - ```food n``` - adds date and time and specified food n to a simple csv file at ~/.food (for tracking meals)
@@ -58,6 +59,7 @@ Current-ish list:
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
+- ```qwerty``` - switches keyboard map to qwerty  
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
 - ```vim``` - remap so instead launches Neovim. (If I ever actually wanted to just run vim I could type ```vi``` which is automatically redirected on ubuntu, but that never happens)!
 - ```vimwiki``` - launches my vimwiki in Neovim
