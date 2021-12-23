@@ -65,6 +65,7 @@ Current-ish list:
 - ```vimwiki``` - launches my vimwiki in Neovim
 - ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
 - ```wificonnections``` - Lists all wifi networks stored on computer and prompts you to enter name of one you'd like to get password and SSID information for.
+- ```wolfeyes``` - plays random 'radio' station of Wolf Eyes tracks
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Neovim
