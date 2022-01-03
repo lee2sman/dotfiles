@@ -99,10 +99,14 @@ Example: ```tldr ls```
 
 Lists the most common uses for a command.
 
-# i3
+### i3
 
 i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
+
+### etc/default/keyboard
+
+My Dvorak input settings and remapping of caps-lock to escape are here. This file is needed as it's the only way I could get capslock to remap to escape persistently between login sessions.
   
-# Alpine
+### Alpine
 
 I use CLI program Alpine to check my personal email, hosted with Migadu. I use a minimal config.
