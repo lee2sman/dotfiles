@@ -1,0 +1,4 @@
+XKBLAYOUT=us,us
+XKBVARIANT=dvorak,
+XKBOPTIONS="caps:escape"
+BACKSPACE=guess
