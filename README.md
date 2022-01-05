@@ -3,18 +3,18 @@ dotfiles
 
 This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies.
 
-**Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email.
+**Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email. I use these dotfiles on my main machine as well as on Windows Subsystem for Linux on my teaching/work machine.
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
 
-### Fish Shell advantages
+### Fish Shell notes
 
-- Autocomplete is on by default and works really well, using the manual pages and your previous commands to make suggestions. Press right to accept any suggestion or else keep typing.
-- It looks great. Type ```fish_config``` to launch your web browser to select how your Terminal will look (fonts, colors, prompts, functions, etc). 
+- Autocomplete on by default. Tab/press right to accept.
+- ```fish_config``` to launch web browser to select Terminal fonts, colors, prompts, functions, etc. 
 - I'm using the fisher plugin manager, primarily to install [z](https://github.com/jethrokuan/z) jump command. Also useful installing various powerline bars, prompts.
 - Built-in syntax highlighting of commands.
-- vimkeys in Fish option. Fish shows what mode you are in and works well with autocomplete.
+- I have vimkeys on in Fish option. Fish shows what mode you are in and works well with autocomplete.
 
 ### Essential programs
 
@@ -69,12 +69,15 @@ Current-ish list:
 - ```wolfeyes``` - plays random 'radio' station of Wolf Eyes tracks
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
+## Config files
+The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. I removed the prefix so that the folder would be visible no GitHub.
+
 ## Neovim
 Instead of vim's vimrc I have an init.vim file at ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. My init.vim is fully commented, so you can look at the details there.
 
 Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file that lets me paste text from anywhere on my computer inside Neovim now. You can take a look at my init.vim file for this.
 
-I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 5 years and have no complaints.
+I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 5+ years and have no complaints.
 
 Plug-ins
 - [Goyo](https://github.com/junegunn/goyo.vim) - minimalist writing app. ```:Goyo``` to toggle it on/off.
@@ -106,8 +109,8 @@ i3 is a nice window manager but hard to configure for use on Dvorak. I compiled 
 
 ### etc/default/keyboard
 
-My Dvorak input settings and remapping of caps-lock to escape are here. This file is needed as it's the only way I could get capslock to remap to escape persistently between login sessions.
+My Dvorak input settings and remapping of caps-lock to escape are here. This file is needed as it's the only way I could get capslock to remap to escape persistently between login sessions in i3.
   
 ### Alpine
 
-I use CLI program Alpine to check my personal email, hosted with Migadu. I use a minimal config.
+I use CLI program Alpine to check my personal email, hosted with Migadu. I use a minimal config saved in .pinerc.
