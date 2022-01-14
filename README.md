@@ -51,6 +51,7 @@ Current-ish list:
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
 - ```ddg! <search string>``` - performs search, returning top hit on duckduckgo to std output, piped through less
 - ```dvorak``` - switches keyboard map to dvorak
+- ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
 - ```food n``` - adds date and time and specified food n to a simple csv file at ~/.food (for tracking meals)
