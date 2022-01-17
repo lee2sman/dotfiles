@@ -46,6 +46,7 @@ Current-ish list:
 - ```brogue``` - had to modify some makefile and config to get this roguelike game to work in ubuntu. This shortcut launches the modified game.
 - ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure, ```backgammon```, ```hack``` roguelike game, ```robots``` Dalek game, ```cribbage``` card game, ```monop``` commandline monopoly, ```tetris-bsd```
 - ```calm``` - plays some brown noise with sox, sounds like calm ocean waves
+- ```cat``` - calls bat instead because "bat is a better cat" just as neovim is a better vim
 - ```clockywock``` - analog CLI clock
 - ```copy <filename>``` - Copies contents of file to the computer's clipboard
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
@@ -59,6 +60,7 @@ Current-ish list:
 - ```make-website n``` - copies over a starter html, css, js to the specified named directory, creating it if needed
 - ```marginalia <search string>``` - does a search for specified string via [Marginalia](https://memex.marginalia.nu/projects/edge/about.gmi), a search engine that favors text-heavy, oldskool-style websites 
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
+- ```offpunk``` - a CLI gemini and web client, forked from AV-98, that can be used to save pages for offline browsing
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```qwerty``` - switches keyboard map to qwerty  
