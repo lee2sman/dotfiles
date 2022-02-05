@@ -48,6 +48,7 @@ Current-ish list:
 - ```calm``` - plays some brown noise with sox, sounds like calm ocean waves
 - ```cat``` - calls bat instead because "bat is a better cat" just as neovim is a better vim
 - ```clockywock``` - analog CLI clock
+- ```connecttowifi``` - prompts for network name and password, then connects via nmcli
 - ```copy <filename>``` - Copies contents of file to the computer's clipboard
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
 - ```ddg! <search string>``` - performs search, returning top hit on duckduckgo to std output, piped through less
