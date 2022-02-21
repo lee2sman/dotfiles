@@ -71,7 +71,16 @@ signature-file=
 # List of features; see Alpine's Setup/options menu for the current set.
 # e.g. feature-list= select-without-confirm, signature-at-bottom
 # Default condition for all of the features is no-.
-feature-list=
+feature-list=compose-cancel-confirm-uses-yes,
+	no-warn-if-blank-subject,
+	no-auto-open-next-unread,
+	thread-sorts-by-arrival,
+	no-thread-index-shows-important-color,
+	show-sort,
+	show-cursor,
+	show-selected-in-boldface,
+	enable-background-sending,
+	enable-alternate-editor-implicitly
 
 # Alpine executes these keys upon startup (e.g. to view msg 13: i,j,1,3,CR,v)
 initial-keystroke-list=
@@ -107,7 +116,7 @@ fcc-name-rule=
 # Sets presentation order of messages in Index. Choices:
 # Subject, From, Arrival, Date, Size, To, Cc, OrderedSubj, Score, and Thread.
 # Order may be reversed by appending /Reverse. Default: "Arrival".
-sort-key=
+sort-key=Date/Reverse
 
 # Sets presentation order of address book entries. Choices: dont-sort,
 # fullname-with-lists-last, fullname, nickname-with-lists-last, nickname
@@ -172,7 +181,7 @@ unknown-character-set=
 
 # Specifies the program invoked by ^_ in the Composer,
 # or the "enable-alternate-editor-implicitly" feature.
-editor=
+editor=nvim
 
 # Specifies the program invoked by ^T in the Composer.
 speller=
@@ -369,7 +378,7 @@ address-book=
 global-address-book=
 
 # Set by Alpine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=121.8
+last-time-prune-questioned=122.2
 
 # Set by Alpine; controls display of "new version" message.
 last-version-used=6.21
@@ -498,25 +507,25 @@ patterns-other=
 patterns-search=
 
 # Controls display of color
-color-style=
+color-style=force-ansi-8color
 
 # Controls display of color for current index line
-current-indexline-style=
+current-indexline-style=flip-colors
 
 # Controls display of color for the titlebar at top of screen
-titlebar-color-style=
+titlebar-color-style=default
 
 # Choose: black, blue, green, cyan, red, magenta, yellow, or white.
-normal-foreground-color=
-normal-background-color=
+normal-foreground-color=000,255,000
+normal-background-color=000,000,000
 reverse-foreground-color=
 reverse-background-color=
 title-foreground-color=
 title-background-color=
 title-closed-foreground-color=
 title-closed-background-color=
-folder-foreground-color=
-folder-background-color=
+folder-foreground-color=255,255,255
+folder-background-color=000,255,255
 directory-foreground-color=
 directory-background-color=
 folder-list-text-foreground-color=
