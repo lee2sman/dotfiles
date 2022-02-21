@@ -1,5 +1,5 @@
 " Lee's semi-minimal vimrc for Neovim with Vim-Plug
-" Last change:	         2020 November
+" Last change:	         2020 July
 "
 "  If you don't understand a setting in here, just type ':h setting'.
 
@@ -56,6 +56,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " Prettier 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
+" use fff as a file opener
+Plug 'dylanaraps/fff.vim'
+
 call plug#end()
 
 " vimwiki settings
@@ -68,6 +71,9 @@ let g:mkdp_browser = 'firefox'
 command! W :w
 command! Wq :wq
 command! WQ :wq
+
+" launch fff with f
+nnoremap f :F<CR>
 
 " my vwscratchpad launcher
 :command Scratchpad silent !open ~/Software/vwscratchpad/index.html
