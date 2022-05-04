@@ -161,7 +161,7 @@ bar {
 exec "setxkbmap -layout 'us' -variant 'dvorak'"
 
 # enable tap to click
-exec xinput set-prop 11 297 1
+exec xinput set-prop "CUST0001:00 06CB:76AF Touchpad" "libinput Tapping Enabled" 1
 
 # enable keyboard media volume controls (f1, f2, f3)
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume $(pactl info | grep 'Default Sink: ' | sed 's/^Default Sink: //') +5% # raise volume
