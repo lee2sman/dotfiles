@@ -66,6 +66,7 @@ Current-ish list:
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```qwerty``` - switches keyboard map to qwerty  
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
+- ```timetable $argv``` - shortcut to my timetable calendar software
 - ```vim``` - remap so instead launches Neovim. (If I ever actually wanted to just run vim I could type ```vi``` which is automatically redirected on ubuntu, but that never happens)!
 - ```vimwiki``` - launches my vimwiki in Neovim
 - ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
