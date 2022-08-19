@@ -50,6 +50,7 @@ Current-ish list:
 - ```clockywock``` - analog CLI clock
 - ```connecttowifi``` - prompts for network name and password, then connects via nmcli
 - ```copy <filename>``` - Copies contents of file to the computer's clipboard
+- ```dirsize``` - Lists current directory size and size of any enclosed sub-directories
 - ```dither <filename>``` - Resizes, converts to grayscale, and turns image into a dithered gif
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
 - ```ddg! <search string>``` - performs search, returning top hit on duckduckgo to std output, piped through less
