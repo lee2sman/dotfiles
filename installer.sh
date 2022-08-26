@@ -8,7 +8,7 @@ sudo apt upgrade
 
 # Installing my programs
 echo "Installing my default programs" \n
-sudo apt install fish neovim git mplayer sox w3m links2 busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby
+sudo apt install fish neovim git mplayer sox w3m links2 busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby nnn curl imagemagick
 
 # Switching default shell to fish
 echo "Changing default shell to fish" \n
