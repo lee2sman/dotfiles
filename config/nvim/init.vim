@@ -51,7 +51,7 @@ Plug 'dermusikman/sonicpi.vim'
 Plug 'vimwiki/vimwiki'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " Prettier 
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
