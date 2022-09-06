@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies.
+This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is installer.sh file to simplify the install process and make it less manual.
 
 **Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email. I use these dotfiles on my main machine as well as on Windows Subsystem for Linux on my teaching/work machine.
 
