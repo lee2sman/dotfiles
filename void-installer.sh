@@ -3,6 +3,9 @@
 # Switches keyboard to dvorak for this session
 setxkbmap dvorak
 
+# reminder note!
+echo "Set wifi up using nmcli if needed..." \n
+
 echo "Updating packages list." \n
 sudo xbps-install -Su
 
@@ -33,5 +36,10 @@ sudo cp -r config/* ~/.config/
 echo "Adding dvorak keyboard startup file to X.org..." \n
 sudo mkdir /etc/X11/xorg.conf.d
 sudo cp /etc/X11/xorg.conf.d/dvorak /etc/X11/xorg.conf.d
+
+# install fisherman plugin manager just for z
+echo "Installing fisherman plugin manager..."
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fisher install jethrokuan/z
 
 echo "You should now shutdown and restart your computer for changes to take full effect."
