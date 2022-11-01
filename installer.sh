@@ -8,7 +8,7 @@ sudo apt upgrade
 
 # Installing my programs
 echo "Installing my default programs" \n
-sudo apt install fish neovim git mplayer pandoc sox w3m links2 busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby nnn curl imagemagick ncal lua5.4 luarocks
+sudo apt install fish neovim git mplayer pandoc sox w3m links2 busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby nnn curl imagemagick ncal lua5.4 luarocks pavucontrol npm
 
 # Switching default shell to fish
 echo "Changing default shell to fish" \n
@@ -20,4 +20,4 @@ echo "Default shell changed to fish. Logout and back in or restart for changes t
 echo "Copying over my config files" \n
 sudo cp -r config/* ~/.config/
 
-echo "Next steps: install pyradio node.js/npm manually"
+echo "Next steps: install pyradio manually"
