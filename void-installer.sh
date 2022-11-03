@@ -5,6 +5,7 @@ setxkbmap dvorak
 
 # reminder note!
 echo "Set wifi up using nmcli if needed..." \n
+sleep 1
 
 echo "Updating packages list." \n
 sudo xbps-install -Su
@@ -20,7 +21,7 @@ sudo vpm install void-repo-nonfree void-repo-multilib-nonfree
 
 # Installing my programs
 echo "Installing my default program (will fail and stop installing if a program is not found)..." \n
-sudo vpm install fish-shell neovim git mplayer pandoc sox w3m busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby nnn curl ImageMagick lua luarocks pyradio tldr vlc yt-dlp love amfora lagrange firefox terminology
+sudo vpm install fish-shell neovim git mplayer pandoc sox w3m busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby fff nnn curl ImageMagick lua luarocks pyradio tldr vlc yt-dlp love amfora lagrange firefox terminology ulauncher
 
 # Switching default shell to fish
 echo "Changing default shell to fish..." \n
@@ -28,14 +29,14 @@ chsh -s $(which fish)
 
 echo "Default shell changed to fish. Logout and back in or restart for changes to take effect..." \n
 
-# Copy config settings 
+# Copy config settings - this is my special sauce
 echo "Copying over my config files..." \n
 sudo cp -r config/* ~/.config/
 
 # Fixing keyboard so it starts up dvorak
 echo "Adding dvorak keyboard startup file to X.org..." \n
 sudo mkdir /etc/X11/xorg.conf.d
-sudo cp /etc/X11/xorg.conf.d/dvorak /etc/X11/xorg.conf.d
+sudo cp etc/X11/xorg.conf.d/dvorak.conf /etc/X11/xorg.conf.d/
 
 # install fisherman plugin manager just for z
 echo "Installing fisherman plugin manager..."
