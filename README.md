@@ -1,9 +1,19 @@
 dotfiles
 ========
 
-This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is installer.sh file to simplify the install process and make it less manual.
+This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is void-installer.sh (or installer.sh in other branches) to simplify the install process and make it less manual.
 
-**Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email. I use these dotfiles on my main machine as well as on Windows Subsystem for Linux on my teaching/work machine.
+## Environment
+
+* [Void Linux](https://voidlinux.org) distro - I now run Void on multiple machines, but I have Ubuntu dotfiles, Alpine, old Mac dotfiles and others on alternate branches of this repo
+* i3 window manager
+* [Fish shell](https://fishshell.com/) 
+* [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) keyboard layout
+* [Neovim](https://neovim.io) editor and vim-keys wherever possible (such as in the fish shell repl)
+* [ulauncher](https://ulauncher.io) for app launching
+* [Terminology](https://www.enlightenment.org/about-terminology.md) terminal
+* [aerc](https://aerc-mail.org) (cli) or [Thunderbird](https://www.thunderbird.net) (gui) for email
+* Firefox browser (http) and amfora client (gemini)
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
@@ -23,12 +33,12 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 - ```tldr``` command line helper which lists how to use most command line software. [info](https://tldr.sh/)
 - ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
 - ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
-- ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
 - ```git``` version control system. I use GitHub, Tildegit and [Keybase Git](https://keybase.io/blog/encrypted-git-for-everyone).
-- ```nnn``` - simple attractive file browser
+- ```nnn``` - simple attractive file browser (or its simpler cousin fff)
 - ```amfora``` - intuitive gemini client
+* ```vpm``` - the "void package manager" which wraps around xbps
 
-# My PATH
+# PATH
 The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
 
 In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/config.fish```, not in your bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
@@ -37,20 +47,16 @@ In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/con
 Rather than bash aliases, fish shell uses functions, stored in ```~/.config/fish/functions/```
 
 Current-ish list:
-- ```agenda``` - prints my weekly google calendar schedule, using gcalcli
 - ```alpine``` - opens alpine email client directly to inbox rather than menu
 - ```ansiweather``` - simplifies the command to grab the weather and display a 5 day local weather forecast one-liner
 - ```backitup``` - wrapper around rsync for backing up my computers
 - ```bandcamp``` - specify url of bandcamp album to play on the commandline via player. no error handling at this point. PgUp/PgDown to navigate tracks.
 - ```battery``` - current battery state and percentage
-- ```brogue``` - had to modify some makefile and config to get this roguelike game to work in ubuntu. This shortcut launches the modified game.
-- ```bsdgames``` - I can't remember all the games installed with bsdgames individually, so this just lists them for me. For example, ```adventure``` for Colossal Cave Adventure, ```backgammon```, ```hack``` roguelike game, ```robots``` Dalek game, ```cribbage``` card game, ```monop``` commandline monopoly, ```tetris-bsd```
 - ```calm``` - plays some brown noise with sox, sounds like calm ocean waves
 - ```cat``` - calls bat instead because "bat is a better cat" just as neovim is a better vim
 - ```clockywock``` - analog CLI clock
 - ```connecttowifi``` - prompts for network name and password, then connects via nmcli
 - ```copy <filename>``` - Copies contents of file to the computer's clipboard
-- ```delight "text string in quotes"``` - a wrapper around minilog, adds a 'delight' to my log
 - ```dirsize``` - Lists current directory size and size of any enclosed sub-directories
 - ```dither <filename>``` - Resizes, converts to grayscale, and turns image into a dithered gif
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
@@ -60,11 +66,8 @@ Current-ish list:
 - ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ```food n``` - adds date and time and specified food n to a simple csv file at ~/.food (for tracking meals)
-- ```make-website n``` - copies over a starter html, css, js to the specified named directory, creating it if needed
 - ```marginalia <search string>``` - does a search for specified string via [Marginalia](https://memex.marginalia.nu/projects/edge/about.gmi), a search engine that favors text-heavy, oldskool-style websites 
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
-- ```offpunk``` - a CLI gemini and web client, forked from AV-98, that can be used to save pages for offline browsing
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```qwerty``` - switches keyboard map to qwerty  
@@ -78,7 +81,7 @@ Current-ish list:
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Config files
-The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. I removed the prefix so that the folder would be visible no GitHub.
+The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. I removed the prefix so that the folder would be visible on GitHub.
 
 ## Neovim
 Instead of vim's vimrc I have an init.vim file at ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. My init.vim is fully commented, so you can look at the details there.
@@ -100,9 +103,6 @@ When I want to add a new plugin I simply add a single line to my init.vim file, 
 Custom commands:
 - I've added ```:Scratchpad``` to my init.vim for Neovim so that I can pull up a simple web-based scratchpad when I need to draw something. [vwscratchpad repo](https://tildegit.org/exquisitecorp/vwscratchpad)
 
-## Atom for IDE and custom Markdown editor
-vim-mode and ex-mode plugins for me, liveserver, Zen focuswriter, teletype for collaborative editing. I mostly use Neovim instead unless I'm teaching students.
-
 ## TLDR
 
 Can't remember how to do something in the terminal but know the name of the app? Then use **TLDR**.
@@ -111,14 +111,11 @@ Example: ```tldr ls```
 
 Lists the most common uses for a command.
 
+## Dvorak-specific
+
 ### i3
 
 i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
 
-### etc/default/keyboard
-
-My Dvorak input settings and remapping of caps-lock to escape are here. This file is needed as it's the only way I could get capslock to remap to escape persistently between login sessions in i3.
-  
-### Alpine
-
-I use CLI program Alpine to check my personal email, hosted with Migadu. I use a minimal config saved in .pinerc.
+### /etc/X11/xorg.conf.d/dvorak.conf
+My Dvorak input settings and remapping of caps-lock to escape are here.
