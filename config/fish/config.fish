@@ -1,4 +1,9 @@
-set -gx EDITOR nvim
-status --is-interactive; and source (rbenv init -|psub)
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
 
-eval "$(luarocks path --bin)"
+# set neovim editor default
+set -gx EDITOR nvim
+
+# turn on vi keybindings for fish repl
+fish_vi_key_bindings
