@@ -5,6 +5,9 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 **Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email. I use these dotfiles on my main machine as well as on Windows Subsystem for Linux on my teaching/work machine.
 
+Notes for this branch:
+* I'm running an old Ubuntu (18.04) and an older fish and thus needed to modify my "save current directory and start in that directory next time" system.
+
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
 
