@@ -24,7 +24,7 @@ font pango:monospace 8
 exec --no-startup-id dex --autostart --environment i3
 
 # Launch ulauncher at startup and make it accessible
-exec --no-startup-id 'ulauncher --no-window'
+exec --no-startup-id "/usr/bin/ulauncher --no-window"
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
