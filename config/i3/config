@@ -23,9 +23,6 @@ font pango:monospace 8
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# Launch ulauncher at startup and make it accessible
-exec --no-startup-id "/usr/bin/ulauncher --no-window"
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -36,6 +33,15 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+# Launch ulauncher at startup and make it accessible
+exec --no-startup-id ulauncher --no-window
+
+# Launch volume controller kmix (from KDE project)
+exec --no-startup-id kmix &
+
+# Pick random wallpaper each session
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -187,3 +193,4 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
