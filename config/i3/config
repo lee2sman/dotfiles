@@ -37,8 +37,8 @@ exec --no-startup-id nm-applet
 # Launch ulauncher at startup and make it accessible
 exec --no-startup-id ulauncher --no-window
 
-# Launch volume controller kmix (from KDE project)
-exec --no-startup-id kmix &
+# Launch volume controller volumeicon
+exec --no-startup-id volumeicon
 
 # Pick random wallpaper each session
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
