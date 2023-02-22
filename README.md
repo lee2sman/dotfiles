@@ -56,6 +56,7 @@ Current-ish list:
 - ```ddg <search string>``` - launches a search in duckduckgo for search string via links2 CLI browser
 - ```ddg! <search string>``` - performs search, returning top hit on duckduckgo to std output, piped through less
 - ```dvorak``` - switches keyboard map to dvorak
+- ```icat <filename/directory>``` - displays specified image or directory of images inline in the console, in Kitty Terminal emulator
 - ```img <image_file>``` - opens specified image file in the CLI using w3m-img, inspired by fff
 - ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
