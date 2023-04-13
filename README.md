@@ -3,21 +3,48 @@ dotfiles
 
 This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is installer.sh file to simplify the install process and make it less manual.
 
-**Notes:** I use [Fishshell](https://fishshell.com/) rather than Bash / Zsh. I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout). I use Neovim and vim-keys. I use the i3 window manager without a desktop environment. I use Alpine to check my email. I use these dotfiles on my main machine as well as on Windows Subsystem for Linux on my teaching/work machine.
+### Notes
+
+**Distro: Void and *buntu** - I use Void Linux, and sometimes Ubuntu/Lubuntu/Regolith  
+**Window Manager: i3** - I use i3 without a desktop environment. If you need help setting up for Dvorak keybindings, see this short [tutorial](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2)  
+**Shell: fish** - I use [Fishshell](https://fishshell.com/) rather than Bash, Zsh or Dash.  
+**Keyboard: Dvorak** - I type in [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout).  
+**Editor: Neovim** - I use Neovim and vim-keys in fish and anywhere else I can.   
+**Email: Thunderbird or alpine** - I use Thunderbird, which is 'good-enough' for me. I tried springmail but switched back. When I ssh in to a tilde server I use alpine primarily but have used mutt. With alpine, I have neovim set as my default editor.
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
 
-### Fish Shell notes
+### Fish Shell start in previous directory
 
-- Autocomplete on by default. Tab/press right to accept.
-- ```fish_config``` to launch web browser to select Terminal fonts, colors, prompts, functions, etc. 
-- I'm using the fisher plugin manager, primarily to install [z](https://github.com/jethrokuan/z) jump command. Also useful installing various powerline bars, prompts.
-- Built-in syntax highlighting of commands.
-- I have vimkeys on in Fish option. Fish shows what mode you are in and works well with autocomplete.
+Anytime I open a terminal, I start up in the last directory I was in. 
+
+To do this, create ```~/.config/fish/conf.d/starting_dir.fish```.  This script will run every time at startup to create a function starting_dir.fish.
+
+Contents:
+
+```
+set -q fish_most_recent_dir && [ -d "$fish_most_recent_dir" ] && cd "$fish_most_recent_dir"
+
+function save_dir --on-variable PWD
+    set -U fish_most_recent_dir $PWD
+end
+```
+
+We do this because autoloaded scripts can't handle events. Thanks to [NotTheDr0ids](https://superuser.com/questions/1721898/how-to-open-new-terminal-window-in-previous-directory-using-fish-shell/1721923?noredirect=1#comment2689763_1721923) for this solution.
+
+### More fish stuff
+
+* ```fish_config``` to launch web browser to select Terminal fonts, colors, prompts, functions, etc. 
+* I'm using the fisher plugin manager, primarily to install [z](https://github.com/jethrokuan/z) jump command. Also useful installing various powerline bars, prompts.
+* Autocomplete is on. Tab/press right to accept.
+* Built-in syntax highlighting of commands.
+* I have vimkeys on in Fish option. Fish shows what mode you are in and works well with autocomplete.
+* Turn off default fish greeting by running ```set fish_greeting```.
 
 ### Essential programs
 
+- ```nmtui``` to connect to wifi when traveling
 - ```nvim``` the Neovim text editor. 
 - ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time. [info](https://github.com/jethrokuan/z)
 - ```tldr``` command line helper which lists how to use most command line software. [info](https://tldr.sh/)
@@ -25,13 +52,11 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 - ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
 - ```apt``` package manager for Ubuntu. *Previously on the Mac I used ```brew``` package manager.*
 - ```git``` version control system. I use GitHub, Tildegit and [Keybase Git](https://keybase.io/blog/encrypted-git-for-everyone).
-- ```nnn``` - simple attractive file browser
+- ```nnn``` - simple attractive file browser (or ```fff``` written in bash, and displays images inline in the terminal)
 - ```amfora``` - intuitive gemini client
 
-# My PATH
-The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
-
-In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/config.fish```, not in your bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the PATH inside config.fish.
+## fish's path
+In fish the path is set in `config.fish`, located at ```~/.config/fish/config.fish```, not in your bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which can be added to the path inside config.fish.
 
 # Aliases / Fish Functions
 Rather than bash aliases, fish shell uses functions, stored in ```~/.config/fish/functions/```
@@ -79,10 +104,10 @@ Current-ish list:
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
 ## Config files
-The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. I removed the prefix so that the folder would be visible no GitHub.
+The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. I removed the prefix so that the folder would be more visible on GitHub.
 
 ## Neovim
-Instead of vim's vimrc I have an init.vim file at ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, which gets called in my init.vim file. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. My init.vim is fully commented, so you can look at the details there.
+Instead of vim's vimrc I have an init.vim file at ~/.config/nvim . I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager, called by init.vim. I set neovim (nvim) as the $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim. 
 
 Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config in my init.vim file that lets me paste text from anywhere on my computer inside Neovim now. You can take a look at my init.vim file for this.
 
