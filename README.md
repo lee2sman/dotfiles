@@ -14,6 +14,7 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 * [Terminology](https://www.enlightenment.org/about-terminology.md) terminal
 * [aerc](https://aerc-mail.org) (cli) or [Thunderbird](https://www.thunderbird.net) (gui) for email
 * Firefox browser (http) and amfora client (gemini)
+* lxdm display manager
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
@@ -106,6 +107,10 @@ When I want to add a new plugin I simply add a single line to my init.vim file, 
 
 Custom commands:
 - I've added ```:Scratchpad``` to my init.vim for Neovim so that I can pull up a simple web-based scratchpad when I need to draw something. [vwscratchpad repo](https://tildegit.org/exquisitecorp/vwscratchpad)
+
+### lxdm
+
+lxdm is the default display manager on Void, though can be switched. To edit the login display, run ```sudo lxdm-config```.
 
 ## TLDR
 
