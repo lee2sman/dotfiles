@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+# put this in the path somewhere like /usr/local/bin
+# same with git-update.fish
+# make both executable
+
+git-update.fish
