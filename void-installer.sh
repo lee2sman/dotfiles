@@ -21,7 +21,7 @@ sudo vpm install void-repo-nonfree void-repo-multilib-nonfree
 
 # Installing my programs
 echo "Installing my default program (will fail and stop installing if a program is not found)..." \n
-sudo vpm install fish-shell neovim git mplayer pandoc sox w3m busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby fff nnn curl ImageMagick lua luarocks pyradio tldr vlc yt-dlp love amfora lagrange firefox terminology ulauncher xclip
+sudo vpm install fish-shell neovim git mplayer pandoc sox w3m busybox cowsay espeak dialog ffmpeg figlet toilet gforth krita neofetch rhythmbox zenity bat ruby fff nnn curl ImageMagick lua luarocks pyradio tldr vlc yt-dlp love amfora lagrange firefox terminology ulauncher rsync xclip
 
 # Switching default shell to fish
 echo "Changing default shell to fish..." \n
