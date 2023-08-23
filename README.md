@@ -11,11 +11,10 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 * [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) keyboard layout
 * [Neovim](https://neovim.io) editor and vim-keys wherever possible (such as in the fish shell repl)
 * [ulauncher](https://ulauncher.io) for app launching
-* [Terminology](https://www.enlightenment.org/about-terminology.md) terminal
+* [Terminology](https://www.enlightenment.org/about-terminology.md) terminal (actually I seem to switch Terminal preferences every few months. Right now i'm using kitty. Previously I was using sakura.)
 * [aerc](https://aerc-mail.org) (cli) or [Thunderbird](https://www.thunderbird.net) (gui) for email
 * Firefox browser (http) and amfora client (gemini)
 * lxdm display manager
-
 
 ![i3 setup Screenshot](i3.jpg)  
 *Void linux + i3. on left: neovim in Terminology. neofetch in kitty. on right, Falkon browser*  
@@ -65,7 +64,6 @@ Current-ish list:
 - ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ```marginalia <search string>``` - does a search for specified string via [Marginalia](https://memex.marginalia.nu/projects/edge/about.gmi), a search engine that favors text-heavy, oldskool-style websites 
 - ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
@@ -73,7 +71,6 @@ Current-ish list:
 - ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
 - ```vim``` - remap so instead launches Neovim. 
 - ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
-- ```wificonnections``` - Lists all wifi networks stored on computer and prompts you to enter name of one you'd like to get password and SSID information for.
 - ```wolfeyes``` - plays random 'radio' station of Wolf Eyes tracks
 - ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
 
@@ -112,7 +109,7 @@ Lists the most common uses for a command.
 
 ### i3
 
-i3 is a nice window manager but hard to configure for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
+i3 is a nice window manager but there's a trick to configuring it for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
 
 ### /etc/X11/xorg.conf.d/dvorak.conf
 My Dvorak input settings and remapping of caps-lock to escape are here.
