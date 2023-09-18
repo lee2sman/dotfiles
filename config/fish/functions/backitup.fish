@@ -7,9 +7,9 @@ function backitup
     #which external usb backup is plugged in?
     #this is the one i store at purchase
     if test -d /run/media/void/easystore
-    rsyrc -av /home/lee/ /run/media/void/easystore/xps13/
+    rsync -av /home/void/ /run/media/void/easystore/xps13/
     else #this is the one stored at home
-    rsync -av /home/lee/ /media/lee/backup/xps13/
+    rsync -av /home/void/ /media/lee/backup/xps13/
 
     end
 
