@@ -36,7 +36,8 @@ exec --no-startup-id nm-applet
 
 # Launch ulauncher at startup and make it accessible
 # note: hotkey launch is set up inside ulauncher's settings (within GUI)
-exec --no-startup-id ulauncher --no-window
+#exec --no-startup-id ulauncher --no-window
+exec --no-startup-id ~/Software/levenshtein/bin/python /usr/bin/ulauncher --no-window
 
 # Launch volume controller volumeicon
 exec --no-startup-id volumeicon
