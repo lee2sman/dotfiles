@@ -46,6 +46,9 @@ Plug ('scrooloose/nerdtree', "{ 'on',  'NERDTreeToggle' }")
 -- Sonic Pi in Neovim
 Plug 'dermusikman/sonicpi.vim'
 
+-- Vim-startify
+Plug 'mhinz/vim-startify'
+
 -- Vimwiki
 Plug 'vimwiki/vimwiki'
 
