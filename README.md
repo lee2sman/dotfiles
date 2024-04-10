@@ -28,7 +28,9 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 * ```fish_config``` to launch web browser to select Terminal fonts, colors, prompts, functions, etc. 
 * I'm using the fisher plugin manager, primarily to install [z](https://github.com/jethrokuan/z) jump command. Also useful installing various powerline bars, prompts.
 * Built-in syntax highlighting of commands.
-* I have vimkeys on in Fish option. Fish shows what mode you are in and works well with autocomplete.
+* I have vimkeys on in Fish option. Fish shows what mode you are in and works well with autocomplete. Set ```
+fish_vi_key_bindings``` inside config.fish
+* Any newly opened terminal will autostart inside the last used directory. See ```.config/fish/conf.d/starting_dir.fish``` for details.
 
 ### Essential programs
 
@@ -63,8 +65,8 @@ Current-ish list:
 - ```img <image_file>``` - opens specified image file in the CLI using w3m-img, inspired by fff
 - ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
+- ```filesize``` - lists size of all files in current directory
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ```minilog``` - shortcut to my minilog micro-journal (takes message, log or help flags)
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```qwerty``` - switches keyboard map to qwerty  
@@ -72,7 +74,7 @@ Current-ish list:
 - ```vim``` - remap so instead launches Neovim. 
 - ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
 - ```wolfeyes``` - plays random 'radio' station of Wolf Eyes tracks
-- ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder.
+- ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder, based on recency.
 
 ## Config files
 The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. 
@@ -90,6 +92,8 @@ Plug-ins
 * [vim-sensible](https://www.vim.org/scripts/script.php?script_id=4391) - provides sensible basic defaults in vim. Includes: backspace in insert mode, begin search while typing out match string, make whitespace prettier, show at least one line above cursor, autoload file changes, improve finding matching open and close tags
 * [Nerd-Tree](https://github.com/scrooloose/nerdtree) - make vim work more like an IDE with left-side file view. I added a shortcut so *Control-N* toggles the filetree open and closed. Without that you have to type ```NERDTreeToggle``` (case-sensitive). 
 * [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim) - Runs very fast. Starts a local server and opens your browser to preview Markdown as you're writing it live. As you move in your markdown file it scrolls to your location in the browser.  ```:MarkdownPreview``` to begin or end.
+* Prettier - Auto tidy up my code
+* fff - use fff as a file opener
 
 When I want to add a new plugin I simply add a single line to my init.lua, then run ```:PlugInstall``` and it downloads into the proper folder.
 
