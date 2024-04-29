@@ -27,6 +27,9 @@ sudo vpm install fish-shell neovim git mplayer pandoc sox w3m busybox cowsay esp
 echo "Changing default shell to fish..." \n
 chsh -s $(which fish)
 
+# Change default xterm font size to 14 monospace
+cp .Xresources ~/.Xresources
+
 echo "Default shell changed to fish. Logout and back in or restart for changes to take effect..." \n
 
 # Copy config settings - this is my special sauce
