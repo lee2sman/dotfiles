@@ -1,18 +1,20 @@
 dotfiles
 ========
 
-This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is void-installer.sh (or installer.sh in other branches) to simplify the install process and make it less manual.
+This is my dotfiles repo to quickly clone and get started on a new computer and to hold my settings in case I lose anything or my computer dies. There is void-installer.sh (or installer.sh in other branches) to simplify the install process and make it less manual. 
 
 ## Environment
 
-* [Void Linux](https://voidlinux.org) distro - I now run Void on multiple machines, but I have Ubuntu dotfiles, Alpine, old Mac dotfiles and others on alternate branches of this repo
+* [Void Linux](https://voidlinux.org) distro 
 * i3 window manager
-* [Fish shell](https://fishshell.com/) 
+* [Fish shell](https://fishshell.com/) (intuitive, with vim-keys support)
 * [Dvorak](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) keyboard layout
-* [Neovim](https://neovim.io) editor and vim-keys wherever possible (such as in the fish shell repl)
-* [ulauncher](https://ulauncher.io) for app launching
-* [Terminology](https://www.enlightenment.org/about-terminology.md) terminal (actually I seem to switch Terminal preferences every few months. Right now i'm using kitty. Previously I was using sakura.)
-* [aerc](https://aerc-mail.org) (cli) or [Thunderbird](https://www.thunderbird.net) (gui) for email
+* [Neovim](https://neovim.io) editor
+* [ulauncher](https://ulauncher.io) for app launching (Ctrl-Space)
+* [Kitty](https://sw.kovidgoyal.net/kitty/) terminal (Ctrl-Enter)
+* [Thunderbird](https://www.thunderbird.net) for email
+* [Document Reader](https://help.gnome.org/users/evince/stable/) aka evince PDF reader. Small, intuitive, supports vim bindings.
+* [Files](https://apps.gnome.org/Nautilus/) aka nautilus file manager (Ctrl-N)
 * Firefox browser (http) and amfora client (gemini)
 * lxdm display manager
 
@@ -21,6 +23,10 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 
 ![Screenshot](screenshot.png)  
 *Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
+
+### Void
+
+I run this same system on my laptop, my studio alienware desktop, and on my test raspberry pi, which is a testament to Void Linux's flexibility, efficiency and stability. The i3 config and installed software could be dropped in to another Linux distro. For example, I previously ran Regolith Linux, a Ubuntu + Gnome + i3 spin of Ubuntu, until I found it too difficult to make customizations. Also, I wanted a stable rolling release distro. For newbies to Linux, I do recommend Ubuntu/Debian. I run alpine linux on iOS in a VM. But everything else I run Void.
 
 ### Fish Shell notes
 
@@ -40,15 +46,15 @@ fish_vi_key_bindings``` inside config.fish
 * ```vimwiki``` which I use to create and edit a huge personal wiki file for notes, brainstorming, copying down info, listing movies to watch, books I've read, etc etc. [info](https://opensource.com/article/18/6/vimwiki-gitlab-notes)
 * ```pyradio``` which I use to stream music. See [my article](https://opensource.com/article/19/11/pyradio).
 * ```git``` version control system. I use GitHub, Tildegit and [Keybase Git](https://keybase.io/blog/encrypted-git-for-everyone).
-* ```amfora``` - intuitive gemini client
 * ```vpm``` - the "void package manager" which wraps around xbps
 
-# PATH
+### PATH
+
 The PATH tells your computer where your custom software is located, so that you can launch it by typing its name instead of having to execute it from its specific directory. *(i.e. You can type ```my-program``` instead of ```./my-program.sh``` for example.*
 
 In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/config.fish```, not in your bashrc or `.bash_profile.` Custom programs can be placed in the bin folder, which is in the path.
 
-# Aliases / Fish Functions
+## Aliases / Fish Functions
 Rather than bash aliases, fish shell uses functions, stored in ```~/.config/fish/functions/```
 
 Current-ish list:
@@ -79,14 +85,15 @@ Current-ish list:
 ## Config files
 The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. 
 
-## Neovim
+### Neovim
 Instead of vim's vimrc I have an ~~init.vim~~ (update: I converted my viml script to lua) init.lua file at ~/.config/nvim. The file is fairly minimal and fully commented. I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager. I set neovim (nvim) as my $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
 
 Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config that lets me paste text from anywhere on my computer inside Neovim now. This relies (on my computer) on the installed program xclip.
 
 I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 7+ years and have no complaints.
 
-Plug-ins
+### Plug-ins
+
 * [Goyo](https://github.com/junegunn/goyo.vim) - minimalist writing app. ```:Goyo``` to toggle it on/off.
 * [Vimwiki](https://vimwiki.github.io/) - a vim-based personal wiki / knowledge repository. I use this extensively but it's for internal use only on my own machine. ```\ww``` (aka 'leader-w-w') to turn on, or my shortcut function ```vimwiki``` to jump into it.
 * [vim-sensible](https://www.vim.org/scripts/script.php?script_id=4391) - provides sensible basic defaults in vim. Includes: backspace in insert mode, begin search while typing out match string, make whitespace prettier, show at least one line above cursor, autoload file changes, improve finding matching open and close tags
@@ -116,4 +123,5 @@ Lists the most common uses for a command.
 i3 is a nice window manager but there's a trick to configuring it for use on Dvorak. I compiled a short [walkthrough to setup i3 with Dvorak](https://gist.github.com/lee2sman/716c73e1fb7d5979d98fb6ad325a3ab2). My config file is in i3 directory. Adds keyboard volume controls, muting, tap to click, Dvorak.
 
 ### /etc/X11/xorg.conf.d/dvorak.conf
+
 My Dvorak input settings and remapping of caps-lock to escape are here.
