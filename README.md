@@ -38,7 +38,7 @@ I run this same system on my laptop, my studio alienware desktop, and on my test
 fish_vi_key_bindings``` inside config.fish
 * Any newly opened terminal will autostart inside the last used directory. See ```.config/fish/conf.d/starting_dir.fish``` for details.
 
-### Essential programs
+### Essential command line programs
 
 * ```nvim``` the Neovim text editor. 
 * ```z``` directory jumping navigation. I use this instead of ```cd``` much of the time. [info](https://github.com/jethrokuan/z)
@@ -73,6 +73,7 @@ Current-ish list:
 - ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
 - ```filesize``` - lists size of all files in current directory
 - ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
+- ```newbackground``` - change desktop to random background image, via feh
 - ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
 - ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - ```qwerty``` - switches keyboard map to qwerty  
@@ -90,7 +91,7 @@ Instead of vim's vimrc I have an ~~init.vim~~ (update: I converted my viml scrip
 
 Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config that lets me paste text from anywhere on my computer inside Neovim now. This relies (on my computer) on the installed program xclip.
 
-I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 7+ years and have no complaints.
+I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 9+ years and have no complaints.
 
 ### Plug-ins
 
