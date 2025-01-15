@@ -1,6 +1,6 @@
 # Void Install Notes
 
-### Here's how I installed my system:
+## Here's how I installed my system
 
 1. Download the unofficial i3 spin of Void linux from [voidbuilds.xyz](https://voidbuilds.xyz).
 2. Write it to a usb drive with dd or balena-etcher.
@@ -18,8 +18,20 @@
 14. Choose install and wait a few minutes. This took less than 3 minutes on my system. When done **choose back** to exit and then in a terminal type poweroff.
 15. Yank out the USB. Then turn the computer back on and hopefully your new Void system turns on.
 
-### After logon:
+## After logon
 
 1. **The login screen is still in qwerty, oy. Type your user password in qwerty**. 
 2. Setup i3 wizard again. Choose your mod key. For me, that's alt.
 3. Launch a terminal Mod+Enter. First type ```setxkbmap dvorak``` for this session and then sudo su and start updating ```xbps-install -Su``` a few times and install vpm. Run the void-installer.sh going forward.
+
+## NPM Packages
+
+* [Download node.js and NPM](https://nodejs.org/en/download)
+
+### Global packages I use
+
+```js
+npm install -g live-server moby readability-cli
+```
+
+Moby is the thesaurus I use.

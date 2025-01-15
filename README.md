@@ -58,33 +58,33 @@ In fish, you add to your PATH in `config.fish`, located at ```~/.config/fish/con
 Rather than bash aliases, fish shell uses functions, stored in ```~/.config/fish/functions/```
 
 Current-ish list:
-- ```ansiweather``` - simplifies the command to grab the weather and display a 5 day local weather forecast one-liner
-- ```backitup``` - wrapper around rsync for backing up my computers
-- ```bandcamp``` - specify url of bandcamp album to play on the commandline via player. no error handling at this point. PgUp/PgDown to navigate tracks.
-- ```battery``` - current battery state and percentage
-- ```calm``` - plays some brown noise with sox, sounds like calm ocean waves
-- ```clockywock``` - analog CLI clock
-- ```copy <filename>``` - Copies contents of file to the computer's clipboard
-- ```dirsize``` - Lists current directory size and size of any enclosed sub-directories
-- ```dither <filename>``` - Resizes, converts to grayscale, and turns image into a dithered gif
-- ```dvorak``` - switches keyboard map to dvorak
-- ```img <image_file>``` - opens specified image file in the CLI using w3m-img, inspired by fff
-- ```epubmobile url``` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
-- ```filecount``` - basically a one-liner that uses wordcount to count the number of files in your current folder.
-- ```filesize``` - lists size of all files in current directory
-- ```fisher``` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. ```fisher add [packagename]```. Find packages [here](https://github.com/jorgebucaran/awesome-fish). ```fisher ls``` to list installed.
-- ```newbackground``` - change desktop to random background image, via feh
-- ```open``` - mimics the Mac open command. Essentially just an alias to Linux equivalent ```xdg-open```.
-- ```pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>``` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
-- ```qwerty``` - switches keyboard map to qwerty  
-- ```rm``` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with ```rm -rf``` if I'm really surely surely sure.
-- ```vim``` - remap so instead launches Neovim. 
-- ```weather``` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
-- ```wolfeyes``` - plays random 'radio' station of Wolf Eyes tracks
-- ```z [directory]``` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type ```z homework``` and it auto ```cd``` jumps you into the proper folder, based on recency.
+- `ansiweather` - simplifies the command to grab the weather and display a 5 day local weather forecast one-liner
+- `backitup` - wrapper around rsync for backing up my computers
+- `bandcamp` - specify url of bandcamp album to play on the commandline via player. no error handling at this point. PgUp/PgDown to navigate tracks.
+- `battery` - current battery state and percentage
+- `calm` - plays some brown noise with sox, sounds like calm ocean waves
+- `copy <filename>` - Copies contents of file to the computer's clipboard
+- `dirsize` - Lists current directory size and size of any enclosed sub-directories
+- `dither <filename>` - Resizes, converts to grayscale, and turns image into a dithered gif
+- `dvorak` - switches keyboard map to dvorak
+- `img <image_file>` - opens specified image file in the CLI using w3m-img, inspired by fff
+- `epubmobile url` - downloads specified article (html link) to Bookmobile's epubs folder and saves in proper format
+- `filecount` - basically a one-liner that uses wordcount to count the number of files in your current folder.
+- `filesize` - lists size of all files in current directory
+- `fisher` - installed when you install [fisher](https://github.com/jorgebucaran/fisher) Fish package manager. `fisher add [packagename]`. Find packages [here](https://github.com/jorgebucaran/awesome-fish). `fisher ls` to list installed.
+- `newbackground` - change desktop to random background image, via feh
+- `open` - mimics the Mac open command. Essentially just an alias to Linux equivalent `xdg-open`.
+- `pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
+- `thesaurus <word>` - wrapper around [moby](https://moby-thesaurus.org/) offline thesaurus dictionary
+- `qwerty` - switches keyboard map to qwerty  
+- `rm` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with `rm -rf` if I'm really surely sure.
+- `thesaurus`
+- `vim` - remap so instead launches Neovim. 
+- `weather` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
+- `z [directory]` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type `z homework` and it auto `cd` jumps you into the proper folder, based on recency.
 
 ## Config files
-The config files in this repo are inside config, but should be titled .config with the dot and located at ```~/.config```. 
+The config files in this repo are inside config, but should be titled .config with the dot and located at `~/.config`. 
 
 ### Neovim
 Instead of vim's vimrc I have an ~~init.vim~~ (update: I converted my viml script to lua) init.lua file at ~/.config/nvim. The file is fairly minimal and fully commented. I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager. I set neovim (nvim) as my $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
