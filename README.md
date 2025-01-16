@@ -77,8 +77,7 @@ Current-ish list:
 - `pdfsplit <input.pdf> <starting-page-num> <ending-page-num> <output.pdf>` - Using ghostscript, this oneliner can excerpt any subsection out of a pdf doc.
 - `thesaurus <word>` - wrapper around [moby](https://moby-thesaurus.org/) offline thesaurus dictionary
 - `qwerty` - switches keyboard map to qwerty  
-- `rm` - this adds a **"are you sure?"** prompt when I try to delete anything in the Terminal. Can be over-ridden with `rm -rf` if I'm really surely sure.
-- `thesaurus`
+- `rm` - this adds an extra confirmation prompt when I try to delete anything in the Terminal. Can be over-ridden with `rm -rf` if I'm really surely sure.
 - `vim` - remap so instead launches Neovim. 
 - `weather` - runs curl to pull down the weather from wttr.in - location i think determined via ip address?
 - `z [directory]` - this *essential* function is actually installed through [fisher](https://github.com/jorgebucaran/fisher). It lets you type `z homework` and it auto `cd` jumps you into the proper folder, based on recency.
