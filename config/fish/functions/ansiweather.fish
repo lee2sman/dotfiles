@@ -1,3 +1,3 @@
-function ansiweather
-command ansiweather -l "Brooklyn, NY" -u imperial -F -d true -s true
+function ansiweather --description "cli weather app"
+  ~/Software/ansiweather/ansiweather -u imperial -F -s true
 end
