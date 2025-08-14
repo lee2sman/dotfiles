@@ -37,6 +37,10 @@ function blog-serve
                 echo "⚡ Detected Eleventy site"
                 npm run dev
                 
+            else if test -f index.html
+                echo "🌐 Detected static site (index.html found)"
+                live-server
+                
             else
                 echo "❌ Could not detect blog type in current directory: $current_dir"
                 echo "Supported types:"
@@ -44,6 +48,7 @@ function blog-serve
                 echo "  - MkDocs (L5-website directory or mkdocs.yml)" 
                 echo "  - Panblog (build.sh file)"
                 echo "  - Eleventy (compost.party directory or .eleventy.js/eleventy.config.js)"
+                echo "  - Static site (index.html file)"
                 return 1
             end
     end
