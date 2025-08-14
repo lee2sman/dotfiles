@@ -33,8 +33,12 @@ function blog-serve
                 echo "📚 Detected MkDocs site (mkdocs.yml found)"
                 mkdocs serve
                 
-            else if test -f .eleventy.js; or test -f eleventy.config.js; or test -f package.json -a (grep -q '"@11ty/' package.json 2>/dev/null)
+            else if test -f .eleventy.js; or test -f eleventy.config.js
                 echo "⚡ Detected Eleventy site"
+                npm run dev
+                
+            else if test -f package.json; and grep -q '"@11ty/' package.json 2>/dev/null
+                echo "⚡ Detected Eleventy site (package.json)"
                 npm run dev
                 
             else if test -f index.html
