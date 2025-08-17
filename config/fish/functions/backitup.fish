@@ -9,10 +9,10 @@ function backitup
     if test -d /run/media/void/easystore
       #   rsync -av /home/void/ /run/media/void/easystore/xps13/
       sudo mount /dev/sda1 /mnt/easystore
-      rsync -av --exclude=".*/" /home/void/ /mnt/easystore/
+      rsync -av --exclude=".*/" --human-readable --stats /home/void/ /mnt/easystore/
 
     else #this is the one stored at home
-    rsync -av --exclude=".*/" /home/void/ /run/media/void/backup/xps13/
+    rsync -av --exclude=".*/" --human-readable --stats /home/void/ /run/media/void/backup/xps13/
 
     end
 
@@ -22,7 +22,7 @@ function backitup
      echo backing up alienware drive D: 
     echo "this will take a few minutes..."
     sleep 2
-    rsync -av --exclude=".*/" /mnt/d/ /mnt/e/alienware/
+    rsync -av --exclude=".*/" --human-readable --stats /mnt/d/ /mnt/e/alienware/
     echo ""
     echo "...complete"
 
