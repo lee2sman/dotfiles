@@ -22,8 +22,7 @@ function blog-serve
             if test -f build.sh
                 echo "📄 Detected Panblog site (has build.sh)"
                 ./build.sh
-                cd docs
-                live-server
+                live-server docs
                 
             else if test -f _config.yml
                 echo "🌸 Detected Jekyll blog (_config.yml found)"
