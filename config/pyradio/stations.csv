@@ -2,9 +2,9 @@
 # name,url,encoding,icon,profile,buffering,force-http,volume,referer
 Drone Zone: Atmospheric textures with minimal beats,http://somafm.com/dronezone.pls,,https://somafm.com/apple-touch-icon.png
 9128.live,http://streams.radio.co/s0aa1e6f4a/listen.m3u,,https://images.squarespace-cdn.com/content/v1/54f7ac3be4b029ca044cd2a6/1564850976039-70831BOJQ8UWY563OHQ6/9128_LIVE_AQUA_1000.jpg
+NTS Radio - Slow Focus,https://stream-mixtape-geo.ntslive.net/mixtape,,https://www.nts.live/apple-touch-icon.png
 NTS Radio - Field Recordings,https://stream-mixtape-geo.ntslive.net/mixtape23,,https://www.nts.live/apple-touch-icon.png
 Pudsey Clough Radio (field recordings),https://orllewin.radioca.st/pcr.ogg
-NTS Radio - Slow Focus,https://stream-mixtape-geo.ntslive.net/mixtape,,https://www.nts.live/apple-touch-icon.png
 Deep Space One: A soundtrack for inner and outer space exploration,http://somafm.com/deepspaceone.pls,,https://somafm.com/apple-touch-icon.png
 Sleepbot Environmental Broadcast,http://www.sleepbot.com/ambience/cgi/listen.cgi/listen.pls
 New Sounds WQXR,http://q2stream.wqxr.org/q2-tunein.aac
@@ -17,8 +17,8 @@ KCHUNG Radio (freeform),https://kchungradio.out.airtime.pro/kchungradio_a,,https
 Radio Is a Foreign Country (International),https://s5.radio.co/s20251311a/listen,,"https://static.wixstatic.com/media/fba30c_09a2e74b529e47a29045bcce6225c2f5f000.jpg/v1/fill/w_609,h_600,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/fba30c_09a2e74b529e47a29045bcce6225c2f5f000.jpg"
 Oroko Radio (African continent and diaspora),https://oroko-radio.radiocult.fm/stream
 Public Domain Jazz,http://relay.publicdomainradio.org/jazz_swing.mp3
-WBGO (jazz),http://wbgo.streamguys.net/listen.pls
-WRTI (jazz),https://playerservices.streamtheworld.com/api/livestream-redirect/WRTI_JAZZ.mp3
+WBGO (jazz),https://ais-sa8.cdnstream1.com/3629_128.mp3
+WRTI (jazz),https://wrti-live.streamguys1.com/jazz-mp3
 WKCR Columbia University (jazz),https://wgbh-live.streamguys1.com/classical-hi,,https://www.classicalwcrb.org/apple-touch-icon.png
 WFMU Orange NJ (freeform),http://wfmu.org/wfmu_aac.pls
 WKDU Drexel 91.7FM (freeform),http://streams.wkdu.org/listen.mp3
@@ -28,8 +28,8 @@ True Black Metal Radio,http://trueblackmetalradio.com:666/radio.m3u,,https://tru
 WPRB Princeton (community radio),http://wprb.streamguys1.com/live,,https://wprb.com/wp-content/uploads/2021/04/80-wicked-years_sqr-768x737.png
 WQXR Operavore (opera),http://opera-stream.wqxr.org/operavore-tunein,,https://media.wnyc.org/i/500/500/c/80/1/operavore_2.png
 KUSC USC (classical),http://playerservices.streamtheworld.com/pls/KUSCAAC64.pls
-WCRB Boston (classical),http://audio.wgbh.org:8004
-WRTI Philly (classical),https://playerservices.streamtheworld.com/api/livestream-redirect/WRTI_CLASSICAL.mp3
+WCRB Boston (classical),https://wgbh-live.streamguys1.com/classical-hi
+WRTI Philly (classical),https://wrti-live.streamguys1.com/classical-mp3
 WQXR NYC (classical),https://stream.wqxr.org/wqxr
 NTS Radio - Sheet Music (classical mixtape),https://stream-mixtape-geo.ntslive.net/mixtape35
 Public Domain Classical,http://relay.publicdomainradio.org/classical.mp3.m3u,,https://i.pinimg.com/originals/ea/8a/04/ea8a046311f5b19da5c6b3ce5db2ad38.jpg
