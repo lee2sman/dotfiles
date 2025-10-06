@@ -86,11 +86,11 @@ Current-ish list:
 The config files in this repo are inside config, but should be titled .config with the dot and located at `~/.config`. 
 
 ### Neovim
-Instead of vim's vimrc I have an ~~init.vim~~ (update: I converted my viml script to lua) init.lua file at ~/.config/nvim. The file is fairly minimal and fully commented. I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager. I set neovim (nvim) as my $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
+Instead of vim's vimrc I have an init.lua file at ~/.config/nvim. The file is fairly minimal and fully commented. I am using the [Plug](https://github.com/junegunn/vim-plug) plugin manager. I set neovim (nvim) as my $EDITOR in the .fish_config file. I have a function that launches nvim when I type vim.
 
-Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config that lets me paste text from anywhere on my computer inside Neovim now. This relies (on my computer) on the installed program xclip.
+Rather than tmux multiplexer or properly managing buffers in Vim/Neovim I just open new tabs in my terminal kitten, switch between them with the Alt keys, and can copy and paste between them using the normal y/ank and p/aste because of a setting I added to my Neovim config that lets me paste text from anywhere on my computer inside Neovim now. This relies (on my computer) on the installed program xclip.
 
-I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for 9+ years and have no complaints.
+I type in Dvorak on my computer and I've found Dvorak is fine for Vim without any need for remapping keys. Have used this setup for over a decade with no complaints.
 
 ### Plug-ins
 

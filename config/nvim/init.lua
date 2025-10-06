@@ -1,6 +1,4 @@
--- Last change:	         2023 June
--- converted from init.vim to init.lua 
---
+-- Last change:	         2025 Oct
 --  If you don't understand a setting in here, just type ':h setting'.
 
 -- Use Vim settings, rather than Vi settings (much better!).
@@ -31,6 +29,9 @@ vim.opt.shiftwidth=2
 -- This setting means that yanking in vim will place the text in the system clipboard and you can paste p in another tab/instance of nvim
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 
+-- set blue-ish background oldschool Vim colorscheme for Neovim
+vim.cmd('colorscheme vim')
+
 --To install plugin use :PlugInstall
 local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
@@ -41,10 +42,7 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/goyo.vim'
 
 -- NERDTreeToggle (for directory navigation)
-Plug ('scrooloose/nerdtree', "{ 'on',  'NERDTreeToggle' }")
-
--- Sonic Pi in Neovim
-Plug 'dermusikman/sonicpi.vim'
+Plug ('preservim/nerdtree', "{ 'on',  'NERDTreeToggle' }")
 
 -- Vim-startify
 Plug 'mhinz/vim-startify'
@@ -53,7 +51,6 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 
 -- Markdown Preview
---Plug ('iamcco/markdown-preview.nvim', { 'do', { '-> mkdp#util#install()' }, 'for', ['markdown', 'vim-plug']})
 Plug ('iamcco/markdown-preview.nvim', "run = function() vim.fn['mkdp#util#install']() end" )
 
 -- Prettier 
