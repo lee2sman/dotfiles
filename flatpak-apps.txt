@@ -1,0 +1,21 @@
+Brave                       com.brave.Browser                1.84.141                 stable      system
+BrogueCE                    com.github.tmewett.BrogueCE      1.14.1                   stable      system
+Spotify                     com.spotify.Client               1.2.74.477.g3be53afe     stable      system
+Lagrange                    fi.skyjake.Lagrange              1.19.3                   stable      system
+Reaper                      fm.reaper.Reaper                 7.54                     stable      system
+Pure Data (Pd)              info.puredata.Pd                 0.56-2                   stable      system
+GitHub Desktop              io.github.shiftey.Desktop        3.4.13-linux1            stable      system
+Purr Data                   net.purrdata.PurrData            2.20.1                   stable      system
+Freedesktop Platform        org.freedesktop.Platform         freedesktop-sdk-24.08.28 24.08       system
+Freedesktop Platform        org.freedesktop.Platform         freedesktop-sdk-25.08.4  25.08       system
+Mesa                        …freedesktop.Platform.GL.default 25.2.6                   24.08       system
+Mesa (Extra)                …freedesktop.Platform.GL.default 25.2.6                   24.08extra  system
+Mesa                        …freedesktop.Platform.GL.default 25.2.6                   25.08       system
+Mesa (Extra)                …freedesktop.Platform.GL.default 25.2.6                   25.08-extra system
+Intel VAAPI driver          …reedesktop.Platform.VAAPI.Intel                          24.08       system
+Intel VAAPI driver          …reedesktop.Platform.VAAPI.Intel                          25.08       system
+Codecs Extra Extension      …eedesktop.Platform.codecs-extra                          25.08-extra system
+FFmpeg extension with extr… …reedesktop.Platform.ffmpeg-full                          24.08       system
+openh264                    …g.freedesktop.Platform.openh264 2.5.1                    2.5.1       system
+LocalSend                   org.localsend.localsend_app      1.17.0                   stable      system
+Zoom                        us.zoom.Zoom                     6.6.10.5815              stable      system
