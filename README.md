@@ -19,10 +19,10 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 * lxdm display manager
 
 ![i3 setup Screenshot](i3.jpg)  
-*Void linux + i3. on left: neovim in Terminology. neofetch in kitty. on right, Falkon browser*  
+*Void linux + i3. on left: neovim in kitty, with goyo focuswriter. fastfetch in kitty. on right, Falkon browser*  
 
 ![Screenshot](screenshot.png)  
-*Screenshot of Terminology terminal, showing this document being edited, with :Goyo focuswriter on*
+*Screenshot of Terminology terminal, showing an earlierversion of this document being edited, with :Goyo focuswriter on*
 
 ### Void
 
