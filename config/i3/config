@@ -207,6 +207,5 @@ bindsym $mod+r mode "resize"
 #}
 
 # using polybar instead
-exec_always --no-startup-id polybar
-
+exec_always --no-startup-id sleep 3 && polybar chocobar
 
