@@ -18,11 +18,11 @@ This is my dotfiles repo to quickly clone and get started on a new computer and 
 * Firefox browser (http) and amfora client (gemini)
 * lxdm display manager
 
-![i3 setup Screenshot](i3.jpg)  
-*Void linux + i3. on left: neovim in kitty, with goyo focuswriter. fastfetch in kitty. on right, Falkon browser*  
+![My destkop](void.jpg)  
+*Void linux + i3. on left: fastfetch on top, neovim below, both in kitty terminals. on right, Falkon browser. bottom bar is polybar.*  
 
 ![Screenshot](screenshot.png)  
-*Screenshot of Terminology terminal, showing an earlierversion of this document being edited, with :Goyo focuswriter on*
+*Screenshot of Terminology terminal, showing an earlier version of this document being edited, with :Goyo focuswriter on*
 
 ### Void
 
