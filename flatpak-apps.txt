@@ -1,6 +1,5 @@
 Brave                       com.brave.Browser                1.84.141                 stable      system
 BrogueCE                    com.github.tmewett.BrogueCE      1.14.1                   stable      system
-Spotify                     com.spotify.Client               1.2.74.477.g3be53afe     stable      system
 Lagrange                    fi.skyjake.Lagrange              1.19.3                   stable      system
 Reaper                      fm.reaper.Reaper                 7.54                     stable      system
 Pure Data (Pd)              info.puredata.Pd                 0.56-2                   stable      system
@@ -19,3 +18,4 @@ FFmpeg extension with extr… …reedesktop.Platform.ffmpeg-full                
 openh264                    …g.freedesktop.Platform.openh264 2.5.1                    2.5.1       system
 LocalSend                   org.localsend.localsend_app      1.17.0                   stable      system
 Zoom                        us.zoom.Zoom                     6.6.10.5815              stable      system
+Processing IDE              org.processing.processingide     4.3                      stable      system
