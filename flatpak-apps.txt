@@ -19,3 +19,4 @@ openh264                    …g.freedesktop.Platform.openh264 2.5.1            
 LocalSend                   org.localsend.localsend_app      1.17.0                   stable      system
 Zoom                        us.zoom.Zoom                     6.6.10.5815              stable      system
 Processing IDE              org.processing.processingide     4.3                      stable      system
+Deezer                      dev.aunetx.deezer                7.1.50                   stable      system
