@@ -1,4 +1,4 @@
--- Last change:	         2025 Oct
+-- Last change:	         2026 May
 --  If you don't understand a setting in here, just type ':h setting'.
 
 -- Use Vim settings, rather than Vi settings (much better!).
@@ -24,7 +24,9 @@ vim.opt.laststatus=2
 vim.opt.number = true
 
 -- Tabs are equivalent to two spaces
+vim.opt.tabstop=4
 vim.opt.shiftwidth=2
+vim.opt.expandtab=true
 
 -- This setting means that yanking in vim will place the text in the system clipboard and you can paste p in another tab/instance of nvim
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
@@ -42,7 +44,7 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/goyo.vim'
 
 -- NERDTreeToggle (for directory navigation)
-Plug ('preservim/nerdtree', "{ 'on',  'NERDTreeToggle' }")
+Plug 'preservim/nerdtree'
 
 -- Vim-startify
 Plug 'mhinz/vim-startify'
@@ -51,10 +53,10 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 
 -- Markdown Preview
-Plug ('iamcco/markdown-preview.nvim', "run = function() vim.fn['mkdp#util#install']() end" )
+Plug ('iamcco/markdown-preview.nvim', { ['do'] = 'cd app && npm install' })
 
 -- Prettier 
-Plug ('prettier/vim-prettier', "{ 'do', 'npm install' }")
+Plug ('prettier/vim-prettier', { ['do'] = 'npm install' })
 
 -- use fff as a file opener
 Plug 'dylanaraps/fff.vim'
