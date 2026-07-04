@@ -1,9 +1,11 @@
 # PyRadio Playlist File Format:
-# name,url,encoding,icon,profile,buffering,force-http,volume,referer
+# name,url,encoding,icon,profile,buffering,force-http,volume,referer,player
 Drone Zone (SomaFM),http://somafm.com/dronezone.pls,,https://somafm.com/img3/dronezone-400.png
 9128.live,http://streams.radio.co/s0aa1e6f4a/listen.m3u,,https://images.squarespace-cdn.com/content/v1/54f7ac3be4b029ca044cd2a6/1564850976039-70831BOJQ8UWY563OHQ6/9128_LIVE_AQUA_1000.jpg
 Slow Focus (NTS mixtape),https://stream-mixtape-geo.ntslive.net/mixtape,,https://www.nts.live/apple-touch-icon.png
 Field Recordings (NTS mixtape),https://stream-mixtape-geo.ntslive.net/mixtape23,,https://www.nts.live/apple-touch-icon.png
+Pudsey Clough Radio,https://orllewin.radioca.st/stream
+Infraordinary FM (ASMR),https://infraordinary.fiveradiostations.com:8443/stream
 Rainy Day (mynoise),https://rainyday-mynoise.radioca.st/stream,,https://mynoise.net/apple-touch-icon.png
 Zen Garden (mynoise),http://zengarden.radio.mynoise.net/,,https://mynoise.net/Data/JAPANGARDEN/fb.jpg
 Pure Nature (mynoise),https://purenature-mynoise.radioca.st/stream,,https://mynoise.net/Pix/FBdefault.jpg
@@ -17,6 +19,8 @@ Sweat (NTS mixtape),https://stream-mixtape-geo.ntslive.net/mixtape24,,https://ww
 Cliqhop IDM (SomaFM),http://somafm.com/cliqhop.pls
 Refuge Worldwide Berlin (dance),https://streaming.radio.co/s3699c5e49/listen,,https://refugeworldwide.com/apple-touch-icon.png
 Cashmere Radio (Berlin),https://cashmereradio.out.airtime.pro/cashmereradio_b,,,,,,,https://cashmereradio.com/cashmere_logo.svg
+Resonance FM (London),https://stream.resonance.fm/resonance
+Resonance Extra (London),https://stream.resonance.fm/resonance-extra,,https://foxxradio.com/upload/uk/11182022215651.jpg
 KCHUNG Radio (freeform),https://kchungradio.out.airtime.pro/kchungradio_a,,https://www.radiosurvivor.com/wp-content/uploads/2014/03/KCHUNG-logo.jpg
 Radio Is a Foreign Country (International),https://s5.radio.co/s20251311a/listen,,"https://static.wixstatic.com/media/fba30c_09a2e74b529e47a29045bcce6225c2f5f000.jpg/v1/fill/w_609,h_600,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/fba30c_09a2e74b529e47a29045bcce6225c2f5f000.jpg"
 Oroko Radio (African continent and diaspora),https://oroko-radio.radiocult.fm/stream
@@ -24,6 +28,8 @@ Public Domain Jazz,http://relay.publicdomainradio.org/jazz_swing.mp3
 WBGO (jazz),https://ais-sa8.cdnstream1.com/3629_128.mp3
 WRTI (jazz),https://wrti-live.streamguys1.com/jazz-mp3
 WKCR (jazz),http://wkcr.streamguys1.com/live
+FIP (Radiofrance),https://stream.radiofrance.fr/fip/fip_hifi.m3u8
+WGXC (freeform),https://audio.wavefarm.org/wgxc.mp3
 WFMU Orange NJ (freeform),http://wfmu.org/wfmu_aac.pls
 WKDU Drexel 91.7FM (freeform),http://streams.wkdu.org/listen.mp3
 WTRIP Radio (Wolf Eyes),https://radio.wtrip.org/radio/8000/radio.mp3
