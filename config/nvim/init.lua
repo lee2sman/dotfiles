@@ -1,4 +1,4 @@
--- Last change:	         2026 May
+-- Last change:	         2026 July
 --  If you don't understand a setting in here, just type ':h setting'.
 
 -- Use Vim settings, rather than Vi settings (much better!).
@@ -61,7 +61,20 @@ Plug ('prettier/vim-prettier', { ['do'] = 'npm install' })
 -- use fff as a file opener
 Plug 'dylanaraps/fff.vim'
 
+-- use lua language server 
+Plug 'neovim/nvim-lspconfig'
+
 vim.call('plug#end')
+
+-- LSP setup
+vim.lsp.config('lua_ls', {
+  settings = {
+    Lua = {
+      diagnostics = { globals = { "vim" } },
+    },
+  },
+})
+vim.lsp.enable('lua_ls')
 
 -- vimwiki settings
 vim.g.vimwiki_list = {{path = '~/vimwiki', syntax = 'markdown', ext = '.md'}}
