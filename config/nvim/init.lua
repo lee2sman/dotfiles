@@ -70,7 +70,10 @@ vim.call('plug#end')
 vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
-      diagnostics = { globals = { "vim" } },
+      diagnostics = { 
+        globals = { "vim" },
+        disable = {"lowercase-global" },
+      },
     },
   },
 })
@@ -93,6 +96,9 @@ vim.keymap.set('n', 'f', ':F %<cr>')
 
 -- alternate keybinding (Control-N) to toggle nerdtree
 vim.keymap.set('n','<C-n>', ':NERDTreeToggle %<cr>')
+
+-- add leader \e to see LSP diagnostic messages
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Show diagnostic" })
 
 -- Exit Vim if NERDTree is the only window remaining in the only tab.
 vim.cmd("autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif")
