@@ -40,15 +40,21 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id ulauncher --no-window
 # ulauncher v5 = --hide-window    v6 = --no-window
 #exec --no-startup-id ~/Software/levenshtein/bin/python /usr/bin/ulauncher --hide-window
-exec --no-startup-id /usr/bin/ulauncher --hide-window
+#exec --no-startup-id ulauncher 
+exec --no-startup-id ulauncher --hide-window 
+#bindsym $mod+space exec --no-startup-id ulauncher --hide-window toggle 
+bindsym $mod+space exec --no-startup-id ulauncher --hide-window
+
+# switch to dvorak
+exec --no-startup-id setxkbmap -layout us -variant dvorak
 
 # Launch volume controller volumeicon
 exec --no-startup-id volumeicon
 
 # Pick random wallpaper each session
-#exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 # background photo: reading nook at Left Bank Books
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/clay-banks-z_DkoUqgx6M-unsplash.jpg
+#exec --no-startup-id feh --bg-fill ~/Downloads/10foot.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -65,7 +71,8 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 
 # Launch Nautilus "files"
-bindsym $mod+n exec nautilus
+#bindsym $mod+n exec nautilus
+bindsym $mod+n exec thunar
 
 # kill focused window
 bindsym $mod+Shift+q kill
