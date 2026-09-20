@@ -34,6 +34,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Runs SSD trim once per session | -a flag in case i add drives later and forget to adjust
+exec --no-startup-id /usr/sbin/fstrim -a
+
 # Launch ulauncher at startup and make it accessible
 # note: hotkey launch is set up inside ulauncher's settings (within GUI)
 # startup settings has changed over time. old settings commented out below.
